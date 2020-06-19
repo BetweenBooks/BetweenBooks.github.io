@@ -1,1 +1,27 @@
 # BetweenBooks.github.io
+
+- <https://fonts.google.com/specimen/Marcellus?sidebar.open&selection.family=Marcellus>
+- <https://fonts.google.com/specimen/Nanum+Pen+Script?sidebar.open&selection.family=Nanum+Pen+Script>
+- <https://fonts.google.com/specimen/Yeseva+One>
+- <https://fonts.google.com/specimen/Kosugi?sidebar.open&selection.family=Kosugi>
+- <https://fonts.google.com/specimen/Calistoga?preview.text=Between+Books&preview.text_type=custom#standard-styles>
+- <https://fonts.google.com/specimen/Baskervville>
+- <https://fonts.google.com/specimen/Gamja+Flower>
+- <https://fonts.google.com/specimen/Mansalva>
+- <https://fonts.google.com/specimen/Poppins>
+- <https://fonts.google.com/specimen/Noto+Sans+KR>
+- <https://fonts.google.com/specimen/Noto+Sans+TC>
+- <https://fonts.google.com/specimen/Inconsolata>
+- <https://fonts.google.com/specimen/Josefin+Sans>
+- <https://fonts.google.com/specimen/EB+Garamond>
+- <https://fonts.google.com/specimen/Amiri>
+- <https://fonts.google.com/specimen/Questrial>
+- <https://fonts.google.com/specimen/Cousine>
+- <https://fonts.google.com/specimen/M+PLUS+1p>
+- <https://fonts.google.com/specimen/DM+Mono>
+- <https://fonts.google.com/specimen/Markazi+Text>
+- <https://fonts.google.com/specimen/Baloo+Chettan+2>
+- <https://fonts.google.com/specimen/Yeseva+One>
+- <https://fonts.google.com/specimen/Rubik+Mono+One>
+- <https://fonts.google.com/specimen/Trirong>
+- <https://fonts.google.com/specimen/Marcellus+SC>
