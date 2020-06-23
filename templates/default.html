@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>$title$ - Between Books</title>
+  <meta name="geo.region" content="AU-VIC" />
+  <meta name="geo.placename" content="Melbourne" />
+  <link rel="stylesheet" href="/css/Base.css?$commit$" />
+  <!--
+    Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Baskervville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Meta tags for little cards and such. -->
+  <meta property="og:title" content="$title$ - Braneshop"/>
+  <meta property='og:url' content="$rootUrl$$url$" />
+  $if(imageDescription)$
+    <meta property="og:image" content="$rootUrl$$image$" />
+    <meta property="og:description" content="$imageDescription$"/>
+  $endif$
+</head>
+<body>
+
+  <header role="banner" id="header" class="">
+    <nav role="navigation">
+      <div class="container">
+        <img id="big-logo" src="/images/bb-logo.png" /></li>
+        <ul id="menu">
+          <li id="small-logo"><img src="/images/bb-logo.png" /></li>
+          <li><a alt="Home" title="Home" href="/">Home</a></li>
+          <li><a alt="Reviews" title="Reviews" href="/reviews.html">Reviews</a></li>
+          <li><a alt="About" title="About" href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container page-container">
+    <div role="main">
+      $body$
+    </div>
+  </div>
+
+
+  <div class="container">
+    <footer>
+      <section class="letter">
+        <h5>Between Books Newsletter</h5>
+        <p>Something something...</p>
+      </section>
+      <!-- <div class="decoration">📚</div> -->
+    </footer>
+  </div>
+
+</body>
+</html>

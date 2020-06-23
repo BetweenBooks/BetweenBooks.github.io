@@ -1,0 +1,5 @@
+resolver: lts-12.26
+packages:
+  - .
+extra-deps: 
+- hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939
