@@ -78,6 +78,7 @@ bookLayout = do
     flexDirection column
     minWidth      (px 200)
     maxWidth      (px 300)
+    border        solid (px 1) black
     img ? do
       maxHeight (pct 100)
       maxWidth  (pct 100)
@@ -122,6 +123,7 @@ bookLayout = do
       width      (px 600)
       display       flex
       flexDirection row
+      border        solid (px 1) black
 
       div # ".book-image" ? do
         marginRight (px 10)
