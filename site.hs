@@ -134,7 +134,9 @@ main = do
                   >>= lqipImages imageMetaData
                   >>= relativizeUrls
 
-    match (fromList ["about.md", "contact.md"]) $ do
+    match (fromList 
+            [ "about.md"
+            ]) $ do
       route $ setExtension "html"
       compile $ do
         let ctx = constField "commit" commitDetails
