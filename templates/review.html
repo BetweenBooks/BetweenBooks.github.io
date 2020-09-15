@@ -7,13 +7,13 @@
     <div class="fact">
       <span class="property">Author(s)</span>
       <div class="book-authors">$for(authors)$
-        $body$
+        $body$$sep$,
       $endfor$
       </div>
     </div>
 
     <div class="fact">
-      <span class="property">Published</span>
+      <span class="property">Published by</span>
       <span class="value">$publisher$, $yearPublished$</span>
     </div>
 

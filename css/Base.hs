@@ -197,6 +197,10 @@ css = do
     hover & do
       background ("#ffd381" :: Color)
 
+  li # "#logo" ? do
+    a ? do
+      hover & do
+        background white
 
   div # "#content" ? do
     backgroundColor oldlace
