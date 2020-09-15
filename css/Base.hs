@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE GADTs #-}
-{-# LANGUAGE ConstraintKinds #-}
+{-# LANGUAGE GADTs             #-}
+{-# LANGUAGE ConstraintKinds   #-}
 
 
 -- http://fvisser.nl/clay/
@@ -33,10 +33,10 @@ margin0  = margin  (px 0) (px 0) (px 0) (px 0)
 padding0 = padding (px 0) (px 0) (px 0) (px 0)
 
 
-coreTextFont = fontFamily ["PT Serif"]        [serif]
-monoFont     = fontFamily ["PT Mono"]       [monospace]
-titleFont    = fontFamily ["Calistoga"]     [serif]
-menuFont     = fontFamily ["DM Mono"]  [serif]
+coreTextFont = fontFamily ["DM Sans"]   [serif]
+monoFont     = fontFamily ["PT Mono"]   [monospace]
+titleFont    = fontFamily ["Calistoga"] [serif]
+menuFont     = fontFamily ["DM Sans"]   [serif]
 
 
 -- |
@@ -45,33 +45,99 @@ standardFont =
      coreTextFont
      textAlign justify
 
+
 -- | Header elements: (H1, H2, etc)
 headerStuff =
   do
-    h1 <> h2 <> h3 <> h4 <> h6 ? do
+    h1 <> h2 ? do
       titleFont
       fontWeight normal
 
-    -- h1 ? do
-    --   textAlign center
-    --   fontSize  (rem 3)
+    h3 ? do
+      menuFont
+      fontStyle italic
+      fontWeight normal
+      marginTop (px 30)
 
-    -- header ? do
-    --   paddingBottom (px 40)
 
-      -- marginBottom  (px 10)
---     h2 ? fontSize (rem 1.4)
---     h3 ? fontSize (rem 1.3)
---     h4 ? fontSize (rem 1.2)
 
---     h5 # "#manifold" ? do
---       monoFont
---       fontSize   (rem 1.2)
---       fontWeight normal
+bookLayout :: Css
+bookLayout = do
 
---     h1 ** small ? do
---       fontSize   (rem 1.1)
---       monoFont
+  -- Big review
+
+  div # "#book-review" ? do
+    display       flex
+    flexDirection row
+
+  div # ".book-info" ? do
+    menuFont
+    display       flex
+    allPadding    (px 20)
+    background    white
+    flexDirection column
+    minWidth      (px 200)
+    maxWidth      (px 300)
+    img ? do
+      maxHeight (pct 100)
+      maxWidth  (pct 100)
+      "object-fit" -: "cover"
+
+  div # ".large-review" ? do
+    marginLeft  (px 20)
+    marginRight (px 20)
+    maxWidth    (px 1000)
+
+  div # ".summary" <> div # ".review" ? do
+    marginLeft  (px 10)
+    paddingLeft (px 10)
+
+
+  div # ".book-authors" ? do
+    monoFont
+    textTransform uppercase
+
+  div # ".fact" ? do
+    marginTop     (px 5)
+    marginBottom  (px 5)
+    display       flex
+    flexDirection row
+
+    span # ".property" ? do
+      color gray
+      paddingRight (px 5)
+
+    
+
+  -- Homepage
+  div # ".books" ? do
+    display       flex
+    flexDirection row
+    flexWrap      (FlexWrap "wrap")
+
+    div # ".book" ? do
+      background white
+      allPadding (px 20)
+      allMargin  (px 10)
+      width      (px 600)
+      display       flex
+      flexDirection row
+
+      div # ".book-image" ? do
+        marginRight (px 10)
+        img ? do
+          maxWidth (px 200)
+
+      div # ".date" ? do
+        menuFont
+
+      div # ".book-title" ? do
+        marginBottom (px 5)
+        a ? do
+          titleFont
+          fontSize (px 20)
+
+
 
 
 
@@ -79,18 +145,68 @@ css :: Css
 css = do
   headerStuff
 
+
+  let fontSelectors 
+        = p 
+        <> li
+        <> blockquote
+        <> a
+        <> small
+
+
+
+  fontSelectors ? do
+    standardFont
+
+  p <> li ? do
+    fontSize   (px 14)
+    lineHeight (px 26)
+
   body ? do
     fontSize (px 14)
     margin0
     padding0
+    backgroundColor white
+
+  header ? do
+    marginTop (px 100)
+    ul ? do
+      margin0
+      padding0
+      marginLeft     (px 20)
+      display        flex
+      alignItems     center
+      listStyleType  none
+      justifyContent flexStart
+
+    li ? do
+      firstChild & do
+        marginRight (px 50)
+      padding0
+      a ? do
+        menuFont
+        display block
+        allMargin (px 12)
+
+  a ? do
+    color black
+    visited & do
+      color black
+    hover & do
+      background ("#ffd381" :: Color)
+
+
+  div # "#content" ? do
     backgroundColor oldlace
+    marginTop    (px 10)
+    marginBottom (px 10)
+    allPadding   (px 30)
+    display      flex
+    flexDirection column
 
-  let fontSelectors = p 
-        <> li
-        <> blockquote
 
-  fontSelectors ? do
-    standardFont
+  bookLayout
+
 
   let selectionStyle =
         do
@@ -101,154 +217,6 @@ css = do
   "::-moz-selection" & selectionStyle
 
 
---   section # ".content" ? do
---     display flex
---     flexDirection  column
---     justifyContent center
---     alignItems     center
---     div # ".content" ? do
---       width (px 900)
-
-  -- header <> section <> footer ? do
-  --   maxWidth (px 1000)
-  --   backgroundColor white
-    -- marginLeft  (px 20)
-    -- marginRight (px 20)
-
-  -- header # ".compressed" ? do
-  --   width (pct 100)
-  --   background lightgray
-  --   height (px 100)
-  --   fontSize (rem 0.5)
-  --   h1 ? fontSize (rem 0.9)
-
-  a ? do
-    color royalblue
-    textDecoration none
-    hover & do
-      -- background mediumslateblue
-      -- color      white
-      textDecoration underline
-
-  div # ".container" ? do
-    maxWidth    (px 980)
-    marginLeft  auto
-    marginRight auto
-
-  div # ".page-container" ? do
-    background    white
-    borderTop     solid (px 1) white
-    paddingBottom (px 20)
-
-  div # "role=main" ? do
-    clear both
-    allMargin (px 20)
-    after & do
-      display block
-      "content" -: "' '"
-      height (px 0)
-      clear both
-      visibility hidden
-
-  -- Compressed header
-  let headerSmall =
-        do
-          "#big-logo"   ? do
-            "transition"  -: "1s"
-            display none
-
-          "#small-logo" ? do
-            "transition"  -: "1s"
-            display block
-
-          marginTop     (px 0)
-          display       block
-          img ? do
-            "transition"  -: "1s"
-            allPadding (px 10)
-            height     (px 30)
-            width      auto
-          nav # "role=navigation" ? do
-            "transition"  -: "1s"
-            background   white
-            borderBottom solid (px 1) silver
-            height       (px 50)
-            display      block
-            after & do
-              display block
-              "content" -: "' '"
-              height (px 0)
-              clear both
-              visibility hidden
-            a ? do
-              fontSize  (rem 0.8)
-            ul ? do
-              "transition"  -: "1s"
-              margin0
-              padding0
-              listStyleType none
-              justifyContent flexStart
-              display       block
-            li ? do
-              "transition"  -: "1s"
-              menuFont
-              float    floatLeft
-              padding0
-              a ? do
-                display block
-                allMargin (px 12)
-                padding (px 0) (px 0) (px 6) (px 0)
-
-  let headerBig = 
-        do
-          "#small-logo" ? do
-            display none
-
-          marginTop      (px 20)
-          display        flex
-          justifyContent center
-          img ? do
-            "transition"  -: "1s"
-            width (px 400)
-          nav # "role=navigation" ? do
-            "transition"  -: "1s"
-            display        flex
-            justifyContent center
-            flexDirection  column
-            ul ? do
-              margin0
-              marginTop    (px 20)
-              marginBottom (px 20)
-              padding0
-              display        flex
-              justifyContent center
-              listStyleType  none
-              flexDirection  row
-              flexWrap       (FlexWrap "wrap")
-              li ? do
-                menuFont
-                paddingLeft  (px 10)
-                paddingRight (px 10)
-
-  let features = [M.maxWidth (px 560)]
-
-  query    M.screen features (header ? headerSmall)
-  queryNot M.screen features (header ?   headerBig)
-
-  header # ".small" ? headerSmall
-  header # ".big"   ? headerBig
-
-
-  -- div # "#shell" ? do
-    -- allMargin       (px 10)
-    -- marginTop       (px  0)
-    -- paddingTop      (px  0)
-    -- allPadding      (px 10)
-    -- allBorderRadius (px  3)
-    -- display        flex
-    -- flexDirection  column
-    -- alignItems     center
-    -- justifyContent center
 
   let decoration =
         do
@@ -256,14 +224,13 @@ css = do
           height      (px 0.5)
           display     inlineBlock
           position    relative
-          width       (pct 100)
+          width       (pct 30)
           marginLeft  (px 20)
           marginRight (px 20)
           "bottom"    -: "-0.2rem"
           "content"   -: "''"
 
   div # ".decoration" ? do
-    -- marginTop (px 20)
     color silver
     display        flex
     alignItems     center
@@ -271,20 +238,7 @@ css = do
     before & decoration
     after  & decoration
 
-  -- ul # "#menu" ? do
-  --   margin0
-  --   padding0
-  --   display        flex
-  --   justifyContent center
-  --   listStyleType  none
-  --   flexDirection  row
-  --   flexWrap       (FlexWrap "wrap")
-  --   -- paddingLeft  (px 50)
-  --   -- paddingRight (px 50)
-  --   li ? do
-  --     menuFont
-  --     paddingLeft  (px 10)
-  --     paddingRight (px 10)
 
-
-
+  footer ? do
+    marginTop    (px 20)
+    marginBottom (px 20)

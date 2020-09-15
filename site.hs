@@ -110,23 +110,59 @@ main = do
       route idRoute
       compile copyFileCompiler
 
+    match "css/*.css" $ do
+      route idRoute
+      compile copyFileCompiler
+
     match "css/*.hs" $ do
       -- See: https://jaspervdj.be/hakyll/tutorials/using-clay-with-hakyll.html
       route   $ setExtension "css"
       let cssStr = getResourceString >>= withItemBody (unixFilter "stack" ["runghc"])
       compile $ (fmap compressCss) <$>  cssStr
 
+    matchMetadata "reviews/**.md" (\m -> lookupString "draft" m /= Just "draft") $ do
+      route $ setExtension "html"
 
-    match (fromList ["about.md", "index.md"]) $ do
+      let ctx = constField "commit" commitDetails
+                <> bookContext
+
+      compile $ getResourceBody
+                  >>= renderPandoc
+                  >>= loadAndApplyTemplate "templates/review.html" ctx
+                  >>= loadAndApplyTemplate "templates/default.html" ctx
+                  >>= applyAsTemplate ctx
+                  >>= lqipImages imageMetaData
+                  >>= relativizeUrls
+
+    match (fromList ["about.md", "contact.md"]) $ do
       route $ setExtension "html"
       compile $ do
-        let ctx = bbContext
-                  <> constField "commit" commitDetails
-
-        markdownCompiler
+        let ctx = constField "commit" commitDetails
+                  <> bbContext
+      
+        getResourceBody
+          >>= renderPandoc
           >>= applyAsTemplate ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
+          >>= relativizeUrls
+  
+
+    -- Default stuffs
+    match "index.md" $ do
+      route $ setExtension "html"
+      compile $ do
+        reviews <- fmap (take 20) . recentFirst =<< loadAll "reviews/**"
+
+        let ctx = constField "commit" commitDetails
+                  <> listField "reviews" bookContext (return reviews)
+                  <> bbContext
+      
+        getResourceBody
+          >>= applyAsTemplate ctx
+          >>= loadAndApplyTemplate "templates/default.html" ctx
+          >>= lqipImages imageMetaData
+          >>= relativizeUrls
   
 
     -- let pages = (\x -> "content/" ++ x ++ "/*") <$> folders
@@ -161,6 +197,17 @@ main = do
       -- create [ fromFilePath $ init pageGlob ++ "index.html" ] $ do
       --   route idRoute
       --   compile $ makeItem $ Redirect "front.html"
+
+
+bookContext :: Context String
+bookContext =
+  listFieldWith "authors" bbContext (\i -> do 
+    let identifier = itemIdentifier i 
+    metadata <- getMetadata identifier
+    let metas = maybe [] id $ lookupStringList "authors" metadata
+    return $ map (\x -> Item (fromFilePath x) x) metas
+  )
+  <> bbContext
 
 
 bbContext :: Context String

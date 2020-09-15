@@ -8,11 +8,15 @@
   <meta name="geo.region" content="AU-VIC" />
   <meta name="geo.placename" content="Melbourne" />
   <link rel="stylesheet" href="/css/Base.css?$commit$" />
+  <!-- <link rel="stylesheet" href="/css/library.css?$commit$" /> -->
   <!--
     Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Baskervville&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+
 
   <!-- Meta tags for little cards and such. -->
   <meta property="og:title" content="$title$ - Braneshop"/>
@@ -24,38 +28,28 @@
 </head>
 <body>
 
-  <header role="banner" id="header" class="">
+  <header role="banner" id="header">
     <nav role="navigation">
       <div class="container">
-        <img id="big-logo" src="/images/bb-logo.png" /></li>
         <ul id="menu">
-          <li id="small-logo"><img src="/images/bb-logo.png" /></li>
+          <li id="small-logo"><img src="/images/bb-logo-300.png" width="300" /></li>
           <li><a alt="Home" title="Home" href="/">Home</a></li>
-          <li><a alt="Reviews" title="Reviews" href="/reviews.html">Reviews</a></li>
           <li><a alt="About" title="About" href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a alt="Contact" title="Contact" href="/contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
 
-  <div class="container page-container">
-    <div role="main">
-      $body$
-    </div>
+  <div id="content" role="main">
+    $body$
   </div>
 
 
-  <div class="container">
-    <footer>
-      <section class="letter">
-        <h5>Between Books Newsletter</h5>
-        <p>Something something...</p>
-      </section>
-      <!-- <div class="decoration">📚</div> -->
-    </footer>
-  </div>
+  <footer>
+    <div class="decoration"><img src="/images/bb-book.png" /></div>
+  </footer>
 
 </body>
 </html>

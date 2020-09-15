@@ -1,0 +1,32 @@
+<div class="books">
+
+  $for(reviews)$
+    <div class="book">
+
+      <div class="book-image">
+        <a href="$url$"><img class="book" src="$imageUrl$" alt="$simpleTitle$ - Cover" /></a>
+      </div>
+
+      <div class="book-content">
+        <div class="date">$date$</div>
+
+        <div class="book-title">
+          <a href="$url$">$simpleTitle$</a>
+        </div>
+
+        <div class="book-authors">
+          $for(authors)$
+            $body$
+          $endfor$
+        </div>
+
+        <div class="book-summary">
+          <p>$summary$</p>
+        </div>
+
+      </div>
+
+    </div>
+  $endfor$
+
+</div>
