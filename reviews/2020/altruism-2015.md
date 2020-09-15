@@ -15,7 +15,7 @@ pages: 864
 publisher: Little, Brown and Company
 yearPublished: 2015
 date: 2020-07-25
-summary: >
+summary:
   An exploration into compassion, kindness, empathy, innate goodness and how
   these concepts relate to the idea of being altruistic. Comes from a buddhist
   point of view, but has a very broad approach and generally-applicable advice

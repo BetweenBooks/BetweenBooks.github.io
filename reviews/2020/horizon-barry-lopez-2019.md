@@ -15,7 +15,10 @@ pages: 592
 publisher: Knopf Publishing Group
 yearPublished: 2019
 date: 2020-06-24
-summary: Whatever
+summary:
+  A poetic journey through the arctic and antarctic regions. We follow Barry
+  Lopez as he accompanies scientific expeditions to very cold places and in so
+  doing we learn how to appreciate places, cultures and life itself.
 ---
 
 A nice journey of whatever.
