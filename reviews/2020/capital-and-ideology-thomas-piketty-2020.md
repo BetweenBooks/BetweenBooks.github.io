@@ -23,11 +23,8 @@ summary:
 
 #### Rough Summary
 
-At over 1000 pages^[However, all the footnotes inline, instead of at the end, so
-if you skip footnotes it's a bit less, but I guess you're not the
-kind of person to skip footnotes.],
-this is very far from a light read. Probably the funniest comment in the
-entire book is in the introduction (page 47!):
+At over 1000 pages, this is very far from a light read. Probably the funniest
+comment in the entire book is in the introduction (page 47!):
 
 > "Hurried readers might be tempted to turn directly to the final chapter and
 > conclusion. Although I cannot stop them, I warn that they may find it
