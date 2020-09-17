@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+DATE=`git log HEAD -1 --format=%cd`
+COUNT=`git rev-list HEAD --count`
+HASH=`git rev-parse HEAD`
+
+echo "$HASH-$COUNT on $DATE">metadata/gitinfo
