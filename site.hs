@@ -94,7 +94,7 @@ main = do
   fastBuild <- maybe False read <$> lookupEnv "FAST_BUILD"
 
   hakyllWith config $ do 
-    match "etc/*" $ do
+    match "favicon.ico" $ do
       route idRoute
       compile copyFileCompiler
 
