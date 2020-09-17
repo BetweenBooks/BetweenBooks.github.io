@@ -31,7 +31,7 @@ entire book is in the introduction (page 47!):
 
 > "Hurried readers might be tempted to turn directly to the final chapter and
 > conclusion. Although I cannot stop them, I warn that they may find it
-> difficult to follow without at least glancing at Pasrts One through Four
+> difficult to follow without at least glancing at Parts One through Four
 > ..."
 
 Having now completed the book, I probably agree that maybe all the details are
@@ -117,7 +117,7 @@ this would be so precise.
   >
   > ...
   >
-  > For the sake of comparision, it may be useful to note that nonprofit
+  > For the sake of comparison, it may be useful to note that nonprofit
   > organizations today own a much smaller share of all property: 1 percent in
   > France, 3 percent in Japan, ...
 
@@ -127,7 +127,7 @@ this would be so precise.
 nullius](https://en.wikipedia.org/wiki/Terra_nullius)":
 
   > ... This approach was often summed up by the famous adage "nulle terre
-  > sans seineur," no land without a lord.
+  > sans seigneur," no land without a lord.
 
 - Page 118 - Thomas Paine, in [Agrarian
 Justice](https://www.goodreads.com/book/show/9712649), proposed a 10 percent
@@ -165,16 +165,16 @@ idolising property.
 essentially from 1932 to 2006, and thus able to developed a strong social
 state.
 
-<span class="ch">_Part Two: Slace and Colonial Societies_</span><br />
+<span class="ch">_Part Two: Slave and Colonial Societies_</span><br />
 <span class="ch">_Slave Societies: Extreme Inequality_</span>
 
 - Page 208 (and friends) - Discussion of how the British government reimbursed
-_slaveowners_ when slavery was abolished, due in part to thinking around
+_slave owners_ when slavery was abolished, due in part to thinking around
 Pandora's property box.
 
   > If the British government had decided in 2018 to spend a similar
   > proportion of national income, it would have to disburse 120 billion
-  > euros, or an average of 30 million euros for each of 4,000 slaveowners.
+  > euros, or an average of 30 million euros for each of 4,000 slave owners.
 
 - Page 221 - The mind-boggling insanity of asking the slaves themselves to pay
 for their liberation by refunding their owners to due loss of property
@@ -186,11 +186,11 @@ because, after all, weren't they the ones to gain?
 
 - Page 226 - Discussion of the relationship between France and Haiti and how
 France, to this day, doesn't agree it owes any financial debt (after enforcing
-incredibly harsh extractions justified by the loss of income from abolution
+incredibly harsh extractions justified by the loss of income from abolition
 of slavery.)
 
 - Page 248 - Observation that in Brazil in 1891 they decided to ban the
-illiterate from voting, which in the 1950s exluded more than 50 percent of the
+illiterate from voting, which in the 1950s excluded more than 50 percent of the
 population.
 
 <span class="ch">_Colonial Societies: Diversity and Domination_</span>
@@ -198,13 +198,13 @@ population.
 - Page 272 - Observation that colonized populations paid taxes to finance the
 lives of the colonizers.
 
-<span class="ch">_Ternary Societeies and Colonialism: The Case of India_</span>
+<span class="ch">_Ternary Societies and Colonialism: The Case of India_</span>
 
 - Page 315
   
   > One finds in all civilizations the idea that strict assignment of social
   > positions and political functions can serve as a check on hubris and ego;
-  > this is often used as a defense of hereditary hierarchies, especially in
+  > this is often used as a defence of hereditary hierarchies, especially in
   > monarchic and dynastic systems.
 
 - Page 342 - Comment that measurement of the caste systems by the British
@@ -275,7 +275,7 @@ on the property.
 <span class="ch">_Communist and Postcommunist Societies_</span>
 
 - Page 591 - Bringing it back again to Pandora's property box and showing how
-that came up in enforcement of laws in Soviet communinsim; i.e. locking up
+that came up in enforcement of laws in Soviet communism; i.e. locking up
 small-time traders.
 
 - Page 595 and friends - Comments on private ownership and how it relates to
@@ -337,16 +337,16 @@ right" in the 1955 to the left starting around the 1980s.
   I've noticed the less advantaged people not voting for the left-ish parties.
 
 - Page 759 - Observation of the fact that better schooling is provided to
-students from a more privledged background, thereby strengthening inequality.
+students from a more privileged background, thereby strengthening inequality.
 
 - Page 794 - Table demonstrating the (very surprising to me) total
 non-correlation between the answers to the questions:
 
-  - "There are too many immigrants in france?", and
-  - "To establish social justive, one must take from rich and give to the
+  - "There are too many immigrants in France?", and
+  - "To establish social justice, one must take from rich and give to the
   poor".
 
-  and how the answers break down across criteria suchs as having a degree,
+  and how the answers break down across criteria such as having a degree,
   having a large income, and home ownership.
 
 - Page 801 - Tax competition in the EU and it's relationship to inequality.
@@ -361,7 +361,7 @@ non-correlation between the answers to the questions:
   > Republican: if only whites had voted, not a single Democratic president
   > would have been elected in the last 50 years.
 
-- Page 834 - Just a remidner that in the US the top federal income tax rate
+- Page 834 - Just a reminder that in the US the top federal income tax rate
 changed to 28 percent in 1986, down from an average of 81 percent. (!!)
 
 - Page 859 - Social cleavage in the Brexit vote: Richer people (in income,
@@ -374,7 +374,7 @@ wealth, or education) voted REMAIN.
 
 - Page 898 and friends - Discussion of the [T-Dem](http://tdem.eu/) proposal - a different structure sitting next to the EU that allows for representative government and taxation.
 
-- Page 913 - Proposal to establish an European Partliamentary Union (EPU) to
+- Page 913 - Proposal to establish an European Parliamentary Union (EPU) to
 govern the EU.
 
 - Page 927 - Argument that local action is good and necessary, but needs to be
@@ -391,7 +391,7 @@ the endpoint in thinking; but to serve as an opening point for discussion.
 - Page 973 - Argument for co-management in firms (equal ownership between
 shareholders, and employees (irrespective of if they are a shareholder or
 not). He's mentioned previously that this has been done to some success in
-Germany and some other nordic countries.
+Germany and some other Nordic countries.
 
 - Page 982 and friends - Big proposal of progressive tax rates which fund the
 social transformation of universal income, universal wealth endowment (a very
