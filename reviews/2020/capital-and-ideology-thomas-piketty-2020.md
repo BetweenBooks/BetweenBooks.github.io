@@ -422,7 +422,7 @@ in Australia, where clubs have "salary caps" that limit how much they can
 spend on players. It prevents some clubs from just becoming rich and therefore
 always winning.
 
-- Page 1022 - Call got a global movement towards this social state by forming
+- Page 1022 - Call to a global movement towards this social state by forming
 "codevelopment" treaties with nearby countries. Relatedly he discusses how
 markets allow for movements of _goods and services_, but not people. So, why
 not allow people as well? I.e. full abandonment of borders, but still allow
