@@ -72,6 +72,8 @@ the field as a whole, comes up with next!
 
 #### Specific Notes
 
+<span class="ch">_Introduction_</span>
+
 - Page 2 - Definition of an inequality regime: 
 
   > A set of discourses and institutional arrangements intended to justify and
@@ -92,6 +94,9 @@ university access and parental income is _a straight line_: The more your
 parents earn, the more likely you'll go to higher education. I did not guess
 this would be so precise.
 
+<span class="ch">_Part One. Inequality Regimes in History_ </span><br />
+<span class="ch">_Ternary Societies: Trifunctional Inequality_</span>
+
 - Page 60
 
   > Political leadership always requires some level of moral and intellectual
@@ -102,6 +107,8 @@ this would be so precise.
   among other ideas that it's not necessary to get _into_ politics in order to
   influence politics; i.e. you can just do as Piketty does and present
   well-researched and coherent arguments and then push for their adoption.
+
+<span class="ch">_The Invention of Ownership Societies_</span>
 
 - Page 90 and 91
   
@@ -132,11 +139,17 @@ deterministically; many different outcomes are possible.
 - Page 123 - The claim that we shifted away from idolising religion to
 idolising property.
 
+
+<span class="ch">_Ownership Societies: The Case of France_</span>
+
 - Page 133 - Ownership inequality in France
 
   > ... almost no one in Paris owned an individual apartment before World War 1.
   > In other words, one normally owned the entire building (or several
   > buildings), or else owned nothing and paid rent to a landlord.
+
+
+<span class="ch">_Ownership Societies: European Trajectories_</span>
 
 - Page 183 - Pandora's property box
 
@@ -151,6 +164,9 @@ idolising property.
 - Page 185 - Observation that the social democrats in Sweden were in power
 essentially from 1932 to 2006, and thus able to developed a strong social
 state.
+
+<span class="ch">_Part Two: Slace and Colonial Societies_</span><br />
+<span class="ch">_Slave Societies: Extreme Inequality_</span>
 
 - Page 208 (and friends) - Discussion of how the British government reimbursed
 _slaveowners_ when slavery was abolished, due in part to thinking around
@@ -177,8 +193,12 @@ of slavery.)
 illiterate from voting, which in the 1950s exluded more than 50 percent of the
 population.
 
+<span class="ch">_Colonial Societies: Diversity and Domination_</span>
+
 - Page 272 - Observation that colonized populations paid taxes to finance the
 lives of the colonizers.
+
+<span class="ch">_Ternary Societeies and Colonialism: The Case of India_</span>
 
 - Page 315
   
@@ -194,6 +214,9 @@ enforced more social disharmony by making these differences salient.
 and reservation of spots in government and education; implemented by the
 federal government.
 
+
+<span class="ch">_Ternary Societies and Colonialism: Eurasian Trajectories_</span>
+
 - Page 369 - Characterising state development in terms of taxes collected; 1-2
 percent of national income, to 6-8 percent in 1500 to 1800, in 1910 to 1980
 8-10 percent to 30-50 percent.
@@ -201,6 +224,10 @@ percent of national income, to 6-8 percent in 1500 to 1800, in 1910 to 1980
 - Page 376 - Comment that China gave Hong Kong to Britain as a form of
 financial tribute coming about because Britain saw China as ignoring some
 property rights and started a war.
+
+
+<span class="ch">_Part Three. The Great Transformation of the Twentieth Century_</span><br />
+<span class="ch">_Social-Democratic Societies: Incomplete Equality_</span>
 
 - Page 492 - Graph showing global divergence of top and bottom incomes over
 1980-2015. The bottom 50 percent is going down or stable, the top 10 percent
@@ -245,6 +272,8 @@ inheritance, on wealth.
 flat end up being regressive insofaras they don't consider if people owe money
 on the property.
 
+<span class="ch">_Communist and Postcommunist Societies_</span>
+
 - Page 591 - Bringing it back again to Pandora's property box and showing how
 that came up in enforcement of laws in Soviet communinsim; i.e. locking up
 small-time traders.
@@ -260,6 +289,8 @@ clothes.
 
 - Page 642 - Comment about the EU and the expectation that simply having a
 market will lead to equality (it doesn't).
+
+<span class="ch">_Hypercapitalism: Between Modernity and Archaism_</span>
 
 - Page 662 - Suggestion that we stop tracking GDP and track national income
 instead (which he discussed in Capitalism in the 21st Century book).
@@ -283,6 +314,9 @@ it's not as dramatic.
 
 - Page 704 and friends - Discussion of the EUs inability to make financial
 decisions due unanimous vote requirement and hence veto power.
+
+<span class="ch">_Part Four: Rethinking the Dimensions of Political Conflict_</span><br />
+<span class="ch">_Borders and Property: The Construction of Equality_</span>
 
 - Page 722 - The beginning of a great insight of "social voting cleavages"
 across different social axes such as education, income and wealth.
@@ -317,6 +351,9 @@ non-correlation between the answers to the questions:
 
 - Page 801 - Tax competition in the EU and it's relationship to inequality.
 
+
+<span class="ch">_Brahmin Left: New Euro-American Cleavages_</span>
+
 - Page 821 and friends - Talking about race and voting, and the shocking fact that, in
   the US:
 
@@ -329,6 +366,9 @@ changed to 28 percent in 1986, down from an average of 81 percent. (!!)
 
 - Page 859 - Social cleavage in the Brexit vote: Richer people (in income,
 wealth, or education) voted REMAIN.
+
+
+<span class="ch">_Elements for a Participatory Socialism for the Twenty-First Century_</span>
 
 - Page 895 - Looking at EU governance and how it isn't democratic.
 

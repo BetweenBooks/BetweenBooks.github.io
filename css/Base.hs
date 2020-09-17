@@ -14,10 +14,11 @@ import Prelude hiding ( span
                       , filter
                       , rem
                       )
-import qualified Data.Text   as T
-import qualified Clay.Filter as F
-import qualified Clay.Pseudo as P
-import qualified Clay.Media  as M
+import qualified Data.Text      as T
+import qualified Clay.Filter    as F
+import qualified Clay.Pseudo    as P
+import qualified Clay.Media     as M
+import qualified Clay.Elements  as E
 
 
 main :: IO ()
@@ -90,6 +91,11 @@ bookLayout = do
     marginLeft  (px 20)
     marginRight (px 20)
     maxWidth    (px 1000)
+    span # ".ch" ? E.em ? do
+      monoFont
+      fontStyle normal
+      fontSize (em 0.9)
+      backgroundColor ("#eaeaea" :: Color)
 
   div # ".summary" <> div # ".review" ? do
     marginLeft  (px 10)
