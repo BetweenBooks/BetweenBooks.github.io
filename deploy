@@ -1,0 +1,57 @@
+#!/bin/sh
+
+set -e
+
+# Steps:
+
+# - Stash (any) changes so we can switch branches later
+
+git stash
+
+
+# - Generate metadata
+
+./make-image-metadata
+./git-metadata
+
+
+# - Build the site
+
+stack run -- clean
+stack run -- build
+
+
+# - Switch branches
+
+git checkout gh-pages
+
+
+# - Copy the "_site" to the root, but don't delete things we want. (i.e. the
+#   things that are peristed due to branch switches; those things in the
+#   gitignore file.)
+
+rsync -a --filter='P _site/'      \
+         --filter='P _cache/'     \
+         --filter='P .git/'       \
+         --filter='P .gitignore'  \
+         --filter='P .stack-work' \
+         --filter='P .env'        \
+         --filter='P .nojekyll'   \
+         --filter='P metadata'    \
+         --filter='P CNAME'       \
+         --filter='P spellcheck'  \
+         --delete-excluded        \
+         _site/ .
+
+
+# - Add commit and push
+
+git add -A
+git commit -m "Update." || true
+git push origin gh-pages
+
+
+# - Bring everything back
+
+git checkout master
+git stash pop
