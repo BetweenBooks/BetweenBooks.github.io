@@ -1,45 +1,48 @@
 <div id="book-review">
-  <div class="book-info">
-    <div>
-      <img src="$imageUrl$" />
-    </div>
-
-    <div class="fact">
-      <span class="property">Author(s)</span>
-      <div class="book-authors">$for(authors)$
-        $body$$sep$,
-      $endfor$
+  <div>
+    <div class="book-info">
+      <div>
+        <img src="$imageUrl$" />
       </div>
-    </div>
 
-    <div class="fact">
-      <span class="property">Published by</span>
-      <span class="value">$publisher$, $yearPublished$</span>
-    </div>
+      <div class="fact">
+        <span class="property">Author</span>
+        <div class="book-authors">$for(authors)$
+          $body$$sep$,
+        $endfor$
+        </div>
+      </div>
 
+      <div class="fact">
+        <span class="property">Published by</span>
+        <span class="value">$publisher$, $yearPublished$</span>
+      </div>
 
-    <div class="fact">
-      <span class="property">Pages</span>
-      <span class="value">$pages$</span>
-    </div>
+      <div class="fact">
+        <span class="property">Pages</span>
+        <span class="value">$pages$</span>
+      </div>
 
-    <div class="fact">
-      <span class="property">Buy on</span>
-      <span class="value">
-        <a href="$link$">Bookshop</a>
-      </span>
-    </div>
+      <!-- Bookshop is American-Only at present. -->
+      <!-- <div class="fact"> -->
+      <!--   <span class="property">Buy on</span> -->
+      <!--   <span class="value"> -->
+      <!--     <a href="$bookshopLink$">Bookshop</a> -->
+      <!--   </span> -->
+      <!-- </div> -->
 
-    <div class="fact">
-      <span class="property">Find on</span>
-      <span class="value">
-        <a href="$link$">Goodreads</a>
-      </span>
+      <div class="fact">
+        <span class="property">Find on</span>
+        <span class="value">
+          <a href="$goodreadsLink$">Goodreads</a>
+        </span>
+      </div>
     </div>
   </div>
 
+
   <div class="large-review">
-    <h2>$title$</h2>
+    <h1>$title$</h1>
 
     <h3>Summary</h3>
 
@@ -47,11 +50,20 @@
       <p>$summary$</p>
     </div>
 
-    <h3>Review</h3>
+    <h3>Thoughts</h3>
 
     <div class="review">
       $body$
     </div>
+
+
+    <!-- TODO: Maybe include. -->
+    <!-- <hr /> -->
+    <!-- <script -->
+    <!--   src="https://bookshop.org/widgets.js" -->
+    <!--   data-type="book" -->
+    <!--   data-affiliate-id="13989" -->
+    <!--   data-sku="$isbn13$"></script> -->
   </div>
 
 </div>

@@ -19,6 +19,7 @@ summary:
   A poetic journey through the arctic and antarctic regions. We follow Barry
   Lopez as he accompanies scientific expeditions to very cold places and in so
   doing we learn how to appreciate places, cultures and life itself.
+draft: draft
 ---
 
 A nice journey of whatever.

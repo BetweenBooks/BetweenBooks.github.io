@@ -59,6 +59,8 @@ headerStuff =
       fontWeight normal
       marginTop (px 30)
 
+    h4 ? do
+      menuFont
 
 
 bookLayout :: Css
@@ -92,6 +94,11 @@ bookLayout = do
   div # ".summary" <> div # ".review" ? do
     marginLeft  (px 10)
     paddingLeft (px 10)
+
+    blockquote ? do
+      paddingLeft (px 10)
+      borderLeft  solid (px 1) silver
+      fontStyle   italic
 
 
   div # ".book-authors" ? do
