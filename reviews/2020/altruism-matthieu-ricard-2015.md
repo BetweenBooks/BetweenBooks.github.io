@@ -12,6 +12,13 @@ isbn: 0316208248
 isbn13: 9780316208239
 imageUrl: /images/book-images/altruism.png
 pages: 864
+tags:
+  - buddhism
+  - ethics
+  - compassion
+  - empathy
+  - economics
+  - long-read
 date: 2020-09-17
 summary:
   An exploration into compassion, kindness, empathy, innate goodness and how
@@ -22,9 +29,14 @@ summary:
 draft: draft
 ---
 
+#### Rough Summary
+
 Important concepts:
 
 - Difference between empathy and compassion
+
+
+#### Tidbits
 
 Quoted Quotes:
 
@@ -32,3 +44,4 @@ Quoted Quotes:
   since he can't imagine himself poor".
 - Alexandre Jollien: "In pity, sadness comes first. I am sad that the other is
 suffering, but I don't really love them. In compassion, love comes first."
+

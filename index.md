@@ -4,4 +4,4 @@ title: Reviews
 
 <h1>Reviews</h1>
 
-$partial("templates/review-list.html")$
+$partial("templates/book-list.html")$

@@ -68,6 +68,13 @@ bookLayout :: Css
 bookLayout = do
 
   -- Big review
+  --
+  -- span # ".tags" ? do
+  --   a ? do
+  --     backgroundColor  cornsilk
+  --     allMargin        (px 5)
+  --     allPadding       (px 4)
+  --     allBorderRadius  (px 5)
 
   div # "#book-review" ? do
     display       flex
@@ -75,13 +82,13 @@ bookLayout = do
 
   div # ".book-info" ? do
     menuFont
-    display       flex
-    allPadding    (px 20)
-    background    white
-    flexDirection column
-    minWidth      (px 200)
-    maxWidth      (px 300)
-    border        solid (px 1) black
+    display         flex
+    allPadding      (px 20)
+    backgroundColor white
+    flexDirection   column
+    minWidth        (px 200)
+    maxWidth        (px 300)
+    border          solid (px 1) black
     img ? do
       maxHeight (pct 100)
       maxWidth  (pct 100)
@@ -91,7 +98,7 @@ bookLayout = do
     marginLeft  (px 20)
     marginRight (px 20)
     maxWidth    (px 1000)
-    span # ".ch" ? E.em ? do
+    span # ".ch" ? do
       monoFont
       fontStyle normal
       fontSize (em 0.9)
@@ -130,13 +137,13 @@ bookLayout = do
     flexWrap      (FlexWrap "wrap")
 
     div # ".book" ? do
-      background white
-      allPadding (px 20)
-      allMargin  (px 10)
-      width      (px 600)
-      display       flex
-      flexDirection row
-      border        solid (px 1) black
+      backgroundColor white
+      allPadding      (px 20)
+      allMargin       (px 10)
+      width           (px 600)
+      display         flex
+      flexDirection   row
+      border          solid (px 1) black
 
       div # ".book-image" ? do
         marginRight (px 10)
@@ -152,8 +159,8 @@ bookLayout = do
           titleFont
           fontSize (px 20)
 
-
-
+    div # ".draft" ? do
+      background lightcyan
 
 
 css :: Css

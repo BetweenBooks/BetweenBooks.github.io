@@ -23,19 +23,20 @@
         <span class="value">$pages$</span>
       </div>
 
-      <!-- Bookshop is American-Only at present. -->
-      <!-- <div class="fact"> -->
-      <!--   <span class="property">Buy on</span> -->
-      <!--   <span class="value"> -->
-      <!--     <a href="$bookshopLink$">Bookshop</a> -->
-      <!--   </span> -->
-      <!-- </div> -->
-
       <div class="fact">
         <span class="property">Find on</span>
         <span class="value">
           <a href="$goodreadsLink$">Goodreads</a>
         </span>
+      </div>
+
+      <div class="fact">
+        <span class="property">Tags</span>
+
+        <br />
+        $if(tags)$
+          <span class="tags">$tags$</span>
+        $endif$
       </div>
     </div>
   </div>
@@ -56,14 +57,6 @@
       $body$
     </div>
 
-
-    <!-- TODO: Maybe include. -->
-    <!-- <hr /> -->
-    <!-- <script -->
-    <!--   src="https://bookshop.org/widgets.js" -->
-    <!--   data-type="book" -->
-    <!--   data-affiliate-id="13989" -->
-    <!--   data-sku="$isbn13$"></script> -->
   </div>
 
 </div>

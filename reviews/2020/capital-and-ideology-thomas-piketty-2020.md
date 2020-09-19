@@ -13,6 +13,10 @@ isbn13: 9780674980822
 imageUrl: /images/book-images/capital-and-ideology-thomas-piketty-2020.png
 pages: 1,104
 date: 2020-09-17
+tags:
+  - economics
+  - long-read
+  - democracy
 summary:
   An incredibly detailed journey through various political regimes through the
   lens of understanding how they were structured and how that structure
@@ -69,7 +73,7 @@ the field as a whole, comes up with next!
 
 #### Specific Notes
 
-<span class="ch">_Introduction_</span>
+<span class="ch">Introduction</span>
 
 - Page 2 - Definition of an inequality regime: 
 
@@ -91,8 +95,8 @@ university access and parental income is _a straight line_: The more your
 parents earn, the more likely you'll go to higher education. I did not guess
 this would be so precise.
 
-<span class="ch">_Part One. Inequality Regimes in History_ </span><br />
-<span class="ch">_Ternary Societies: Trifunctional Inequality_</span>
+<span class="ch">Part One. Inequality Regimes in History</span><br />
+<span class="ch">Ternary Societies: Trifunctional Inequality</span>
 
 - Page 60
 
@@ -105,7 +109,7 @@ this would be so precise.
   influence politics; i.e. you can just do as Piketty does and present
   well-researched and coherent arguments and then push for their adoption.
 
-<span class="ch">_The Invention of Ownership Societies_</span>
+<span class="ch">The Invention of Ownership Societies</span>
 
 - Page 90 and 91
   
@@ -137,7 +141,7 @@ deterministically; many different outcomes are possible.
 idolising property.
 
 
-<span class="ch">_Ownership Societies: The Case of France_</span>
+<span class="ch">Ownership Societies: The Case of France</span>
 
 - Page 133 - Ownership inequality in France
 
@@ -146,7 +150,7 @@ idolising property.
   > buildings), or else owned nothing and paid rent to a landlord.
 
 
-<span class="ch">_Ownership Societies: European Trajectories_</span>
+<span class="ch">Ownership Societies: European Trajectories</span>
 
 - Page 183 - Pandora's property box
 
@@ -162,8 +166,8 @@ idolising property.
 essentially from 1932 to 2006, and thus able to developed a strong social
 state.
 
-<span class="ch">_Part Two: Slave and Colonial Societies_</span><br />
-<span class="ch">_Slave Societies: Extreme Inequality_</span>
+<span class="ch">Part Two: Slave and Colonial Societies</span><br />
+<span class="ch">Slave Societies: Extreme Inequality</span>
 
 - Page 208 (and friends) - Discussion of how the British government reimbursed
 _slave owners_ when slavery was abolished, due in part to thinking around
@@ -190,12 +194,12 @@ of slavery.)
 illiterate from voting, which in the 1950s excluded more than 50 percent of the
 population.
 
-<span class="ch">_Colonial Societies: Diversity and Domination_</span>
+<span class="ch">Colonial Societies: Diversity and Domination</span>
 
 - Page 272 - Observation that colonized populations paid taxes to finance the
 lives of the colonizers.
 
-<span class="ch">_Ternary Societies and Colonialism: The Case of India_</span>
+<span class="ch">Ternary Societies and Colonialism: The Case of India</span>
 
 - Page 315
   
@@ -212,7 +216,7 @@ and reservation of spots in government and education; implemented by the
 federal government.
 
 
-<span class="ch">_Ternary Societies and Colonialism: Eurasian Trajectories_</span>
+<span class="ch">Ternary Societies and Colonialism: Eurasian Trajectories</span>
 
 - Page 369 - Characterising state development in terms of taxes collected; 1-2
 percent of national income, to 6-8 percent in 1500 to 1800, in 1910 to 1980
@@ -223,8 +227,8 @@ financial tribute coming about because Britain saw China as ignoring some
 property rights and started a war.
 
 
-<span class="ch">_Part Three. The Great Transformation of the Twentieth Century_</span><br />
-<span class="ch">_Social-Democratic Societies: Incomplete Equality_</span>
+<span class="ch">Part Three. The Great Transformation of the Twentieth Century</span><br />
+<span class="ch">Social-Democratic Societies: Incomplete Equality</span>
 
 - Page 492 - Graph showing global divergence of top and bottom incomes over
 1980-2015. The bottom 50 percent is going down or stable, the top 10 percent
@@ -269,7 +273,7 @@ inheritance, on wealth.
 flat end up being regressive insofaras they don't consider if people owe money
 on the property.
 
-<span class="ch">_Communist and Postcommunist Societies_</span>
+<span class="ch">Communist and Postcommunist Societies</span>
 
 - Page 591 - Bringing it back again to Pandora's property box and showing how
 that came up in enforcement of laws in Soviet communism; i.e. locking up
@@ -287,7 +291,7 @@ clothes.
 - Page 642 - Comment about the EU and the expectation that simply having a
 market will lead to equality (it doesn't).
 
-<span class="ch">_Hypercapitalism: Between Modernity and Archaism_</span>
+<span class="ch">Hypercapitalism: Between Modernity and Archaism</span>
 
 - Page 662 - Suggestion that we stop tracking GDP and track national income
 instead (which he discussed in Capitalism in the 21st Century book).
@@ -312,8 +316,8 @@ it's not as dramatic.
 - Page 704 and friends - Discussion of the EUs inability to make financial
 decisions due unanimous vote requirement and hence veto power.
 
-<span class="ch">_Part Four: Rethinking the Dimensions of Political Conflict_</span><br />
-<span class="ch">_Borders and Property: The Construction of Equality_</span>
+<span class="ch">Part Four: Rethinking the Dimensions of Political Conflict</span><br />
+<span class="ch">Borders and Property: The Construction of Equality</span>
 
 - Page 722 - The beginning of a great insight of "social voting cleavages"
 across different social axes such as education, income and wealth.
@@ -349,7 +353,7 @@ non-correlation between the answers to the questions:
 - Page 801 - Tax competition in the EU and it's relationship to inequality.
 
 
-<span class="ch">_Brahmin Left: New Euro-American Cleavages_</span>
+<span class="ch">Brahmin Left: New Euro-American Cleavages</span>
 
 - Page 821 and friends - Talking about race and voting, and the shocking fact that, in
   the US:
@@ -365,7 +369,7 @@ changed to 28 percent in 1986, down from an average of 81 percent. (!!)
 wealth, or education) voted REMAIN.
 
 
-<span class="ch">_Elements for a Participatory Socialism for the Twenty-First Century_</span>
+<span class="ch">Elements for a Participatory Socialism for the Twenty-First Century</span>
 
 - Page 895 - Looking at EU governance and how it isn't democratic.
 

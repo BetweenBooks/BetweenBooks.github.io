@@ -3,64 +3,18 @@
 {-# LANGUAGE FlexibleContexts  #-}
 {-# LANGUAGE DeriveGeneric     #-} 
 
-import           Control.Applicative (empty)
-import           Control.Monad (liftM, filterM, forM_, when)
 import           Data.Aeson
-import           Data.Functor
 import           Data.List
 import           Data.String.Utils (strip)
-import           Data.List.Split (splitOn)
 import           Data.Maybe (fromJust, isJust, fromMaybe)
-import           Data.Monoid (mappend)
 import           Data.String.Conv (toS)
-import           Data.Traversable
 import           GHC.Generics
 import           Hakyll
 import           Hakyll.Core.UnixFilter (unixFilter)
-import           Hakyll.Web.Redirect
-import           Hakyll.Web.Sass (sassCompiler)
-import           System.Directory
 import           System.Environment (lookupEnv)
 import           System.FilePath
 import           Text.HTML.TagSoup (Tag (..))
-import qualified Data.Text as T
 import qualified Data.Map as M
-import qualified Data.Set as S
-
-
-markdownCompiler =
-    pandocCompilerWith 
-      defaultHakyllReaderOptions 
-      defaultHakyllWriterOptions
-
-sortByIds :: MonadMetadata m => [Item a] -> m [Item a]
-sortByIds items = fmap last . sortBy f <$> indexedIdents
-  where 
-    f (a, b, c, _) (x, y, z, _) = compare (a, b, c) (x,y, z)
-    ids = map itemIdentifier items
-    indexedIdents = for (zip ids items) $ \(ident, item) -> do
-      chIdx    <- getMetadataField' ident "index" <&> read @Int
-      chSec    <- getMetadataField' ident "section" <&> read @Int
-      chSubSec <- getMetadataField' ident "subsection" <&> read @Int
-      pure (chIdx, chSec, chSubSec, item)
-    last (_, _, _, z) = z
-
-
-sortIds :: MonadMetadata m => [Identifier] -> m [Identifier]
-sortIds ids = liftM (map itemIdentifier) $ sortByIds [Item i () | i <- ids]
-
-
-ourPaginator :: MonadMetadata m => Pattern -> m Paginate
-ourPaginator contentMatcher = do
-  ms  <- getAllMetadata contentMatcher
-  ids <- sortIds $ (\(ident, meta) -> ident) <$> ms
-  let pageId n = ids !! (n - 1) -- start indices at 0
-      grouper = pure . fmap (\p -> [p])
-  buildPaginateWith grouper contentMatcher pageId
-
-
-isRegularFileOrDirectory :: FilePath -> Bool
-isRegularFileOrDirectory f = f /= "." && f /= ".."
 
 
 config :: Configuration
@@ -86,12 +40,7 @@ main :: IO ()
 main = do
   commitDetails <- strip <$> readFile "metadata/gitinfo"
   imageMetaData <- computeImageMetaData
-  -- allFolders    <- filter isRegularFileOrDirectory <$> getDirectoryContents "content/"
-
-  -- If we've been provided a specific folder, use that, otherwise
-  -- run generation for all of them.
-  -- folders   <- maybe allFolders (:[]) <$> lookupEnv "SPECIFIC_FOLDER"
-  fastBuild <- maybe False read <$> lookupEnv "FAST_BUILD"
+  showDrafts    <- maybe False read <$> lookupEnv "SHOW_DRAFTS"
 
   hakyllWith config $ do 
     match "favicon.ico" $ do
@@ -117,30 +66,70 @@ main = do
     match "css/*.hs" $ do
       -- See: https://jaspervdj.be/hakyll/tutorials/using-clay-with-hakyll.html
       route   $ setExtension "css"
-      let cssStr = getResourceString >>= withItemBody (unixFilter "stack" ["runghc"])
-      compile $ (fmap compressCss) <$>  cssStr
 
-    matchMetadata "reviews/**.md" (\m -> lookupString "draft" m /= Just "draft") $ do
+      let cssStr = getResourceString >>= withItemBody (unixFilter "stack" ["runghc"])
+      compile $ fmap compressCss <$>  cssStr
+
+
+    let draftCheck = if showDrafts then 
+                        const True
+                     else
+                        \m -> lookupString "draft" m /= Just "draft"
+
+
+    matchMetadata "reviews/**.md" draftCheck $ do
       route $ setExtension "html"
 
-      let ctx = constField "commit" commitDetails
-                <> bookContext
+      -- TODO: I don't quite know why this doesn't work.
+      -- let getNonDraftTags :: MonadMetadata m => Identifier -> m [String]
+      --     getNonDraftTags identifier = do
+      --       metadata <- getMetadata identifier
+      --       let isDraft = draftCheck metadata
+      --       let tags    = fromMaybe [] $
+      --                         (lookupStringList "tags" metadata) `mplus`
+      --                         (map trim . splitAll "," <$> lookupString "tags" metadata)
+      --       return $ if isDraft then [] else tags
+
+      tags <- buildTagsWith getTags "reviews/**" (fromCapture "tags/*.html")
+
+      let ctx =  constField "commit" commitDetails
+              <> tagsField  "tags"   tags
+              <> bookContext
 
       compile $ getResourceBody
                   >>= renderPandoc
-                  >>= loadAndApplyTemplate "templates/review.html" ctx
+                  >>= loadAndApplyTemplate "templates/review.html"  ctx
                   >>= loadAndApplyTemplate "templates/default.html" ctx
                   >>= applyAsTemplate ctx
                   >>= lqipImages imageMetaData
                   >>= relativizeUrls
+
+      tagsRules tags $ \tag pattern -> do
+        let title = "Books tagged \"" ++ tag ++ "\""
+        route idRoute
+        compile $ do
+          books    <- recentFirst =<< loadAll pattern
+          tagCloud <- renderTagCloud 90 180 tags
+
+          let tagCtx =  constField "title"    title
+                     <> listField  "books"    bookContext (return books)
+                     <> constField "tagCloud" tagCloud
+                     <> constField "commit"   commitDetails
+                     <> bookContext
+
+          makeItem ""
+            >>= loadAndApplyTemplate "templates/tag.html"     tagCtx
+            >>= loadAndApplyTemplate "templates/default.html" tagCtx
+            >>= lqipImages imageMetaData
+            >>= relativizeUrls
 
     match (fromList 
             [ "about.md"
             ]) $ do
       route $ setExtension "html"
       compile $ do
-        let ctx = constField "commit" commitDetails
-                  <> bbContext
+        let ctx =  constField "commit" commitDetails
+                <> bbContext
       
         getResourceBody
           >>= renderPandoc
@@ -150,15 +139,14 @@ main = do
           >>= relativizeUrls
   
 
-    -- Default stuffs
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
         reviews <- fmap (take 20) . recentFirst =<< loadAll "reviews/**"
 
-        let ctx = constField "commit" commitDetails
-                  <> listField "reviews" bookContext (return reviews)
-                  <> bbContext
+        let ctx =  constField "commit" commitDetails
+                <> listField "books"   bookContext (return reviews)
+                <> bbContext
       
         getResourceBody
           >>= applyAsTemplate ctx
@@ -166,40 +154,6 @@ main = do
           >>= lqipImages imageMetaData
           >>= relativizeUrls
   
-
-    -- let pages = (\x -> "content/" ++ x ++ "/*") <$> folders
-
-    -- Create all the sub-sites ...
-    -- forM_ pages $ \pageGlob -> do
-    --   let contentMatcher = fromGlob pageGlob
-
-    --   paginator <- ourPaginator contentMatcher
-
-    --   when (not fastBuild) $ do
-    --     match contentMatcher $ version "precomp" $ do
-    --       route $ setExtension "html"
-    --       compile $ pandocCompiler
-
-    --   paginateRules paginator $ \page _ -> do
-    --       route $ setExtension "html"
-    --       compile $ do
-    --         pages <- sortByIds =<< loadAll (contentMatcher .&&. hasVersion "precomp")
-
-    --         let ctx = ourContext
-    --               <> listField "pages" ourContext (return pages)
-    --               <> constField "commit" commitDetails
-    --               <> paginateContext paginator page
-                
-    --         pandocCompiler
-    --           >>= loadAndApplyTemplate "templates/content.html" ctx
-    --           >>= loadAndApplyTemplate "templates/default.html" ctx
-    --           >>= lqipImages imageMetaData
-    --           >>= relativizeUrls
-      --
-      -- create [ fromFilePath $ init pageGlob ++ "index.html" ] $ do
-      --   route idRoute
-      --   compile $ makeItem $ Redirect "front.html"
-
 
 bookContext :: Context String
 bookContext =
@@ -254,7 +208,7 @@ switchInLqipImages :: ImageMetaDataMap -> (Tag String -> Tag String)
 switchInLqipImages imageMetaDataMap t@(TagOpen "img" attrs) = newTag
   where
     doLqip      = True -- Could be condition on some class.
-    classes     = splitOn " " (fromMaybe "" $ M.lookup "class" attrDict)
+    -- classes     = splitOn " " (fromMaybe "" $ M.lookup "class" attrDict)
     attrDict    = M.fromList attrs
     nonSrcAttrs = [ (k, v) | (k, v) <- attrs, v /= "src" ]
     --

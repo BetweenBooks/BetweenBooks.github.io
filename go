@@ -2,7 +2,7 @@
 
 set -e
 
-export FAST_BUILD=True
+# export SHOW_DRAFTS=True
 
 # ./scripts/git-metadata
 

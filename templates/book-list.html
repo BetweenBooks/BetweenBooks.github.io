@@ -1,7 +1,11 @@
 <div class="books">
 
-  $for(reviews)$
-    <div class="book">
+  $for(books)$
+    $if(draft)$
+      <div class="book draft">
+    $else$
+      <div class="book">
+    $endif$
 
       <div class="book-image">
         <a href="$url$"><img class="book" src="$imageUrl$" alt="$simpleTitle$ - Cover" /></a>
@@ -25,7 +29,6 @@
         </div>
 
       </div>
-
     </div>
   $endfor$
 
