@@ -2,7 +2,7 @@
 
 set -e
 
-# export SHOW_DRAFTS=True
+export SHOW_DRAFTS=True
 
 # ./scripts/git-metadata
 
