@@ -34,10 +34,10 @@ margin0  = margin  (px 0) (px 0) (px 0) (px 0)
 padding0 = padding (px 0) (px 0) (px 0) (px 0)
 
 
-coreTextFont = fontFamily ["DM Sans"]   [serif]
-monoFont     = fontFamily ["PT Mono"]   [monospace]
-titleFont    = fontFamily ["Calistoga"] [serif]
-menuFont     = fontFamily ["DM Sans"]   [serif]
+coreTextFont = fontFamily ["Noto Serif JP"] [serif]
+monoFont     = fontFamily ["PT Mono"]       [monospace]
+titleFont    = fontFamily ["Calistoga"]     [serif]
+menuFont     = coreTextFont
 
 
 -- |
