@@ -1,7 +1,7 @@
 ---
-title: Reviews
+title: Updates
 ---
 
-<h1>Reviews</h1>
+<h1>Updates</h1>
 
 $partial("templates/book-list.html")$

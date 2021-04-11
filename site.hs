@@ -77,7 +77,7 @@ main = do
                         \m -> lookupString "draft" m /= Just "draft"
 
 
-    matchMetadata "reviews/**.md" draftCheck $ do
+    matchMetadata "updates/**.md" draftCheck $ do
       route $ setExtension "html"
 
       -- TODO: I don't quite know why this doesn't work.
@@ -90,7 +90,7 @@ main = do
       --                         (map trim . splitAll "," <$> lookupString "tags" metadata)
       --       return $ if isDraft then [] else tags
 
-      tags <- buildTagsWith getTags "reviews/**" (fromCapture "tags/*.html")
+      tags <- buildTagsWith getTags "updates/**" (fromCapture "tags/*.html")
 
       let ctx =  constField "commit" commitDetails
               <> tagsField  "tags"   tags
@@ -142,10 +142,10 @@ main = do
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
-        reviews <- fmap (take 20) . recentFirst =<< loadAll "reviews/**"
+        updates <- fmap (take 20) . recentFirst =<< loadAll "updates/**"
 
         let ctx =  constField "commit" commitDetails
-                <> listField "books"   bookContext (return reviews)
+                <> listField "books"   bookContext (return updates)
                 <> bbContext
       
         getResourceBody
