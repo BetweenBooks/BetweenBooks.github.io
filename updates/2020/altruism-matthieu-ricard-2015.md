@@ -5,7 +5,7 @@ simpleTitle: "Altruism"
 authors:
   - Matthieu Ricard
 goodreadsLink: https://www.goodreads.com/book/show/22208239-altruism
-bookshopLink: https://bookshop.org/a/13989/9780316208246
+bookshopLink: https://bookshop.org/books/altruism-the-power-of-compassion-to-change-yourself-and-the-world/9780316208239
 publisher: Little, Brown and Company
 yearPublished: 2015
 isbn: 0316208248

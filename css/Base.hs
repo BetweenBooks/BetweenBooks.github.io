@@ -80,6 +80,12 @@ bookLayout = do
     display       flex
     flexDirection row
 
+  ul # ".book-links" ? do
+    margin0
+    li ? do
+      display inline
+      margin0
+
   div # ".book-info" ? do
     menuFont
     display         flex

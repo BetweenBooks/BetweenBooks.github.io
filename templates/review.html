@@ -25,9 +25,17 @@
 
       <div class="fact">
         <span class="property">Find on</span>
-        <span class="value">
-          <a href="$goodreadsLink$">Goodreads</a>
-        </span>
+        $if(bookshopLink)$
+        <span class="fact"><a href="$bookshopLink$">Bookshop</a></span>
+        $endif$
+        $if(bookshopLink)$
+          $if(goodreadsLink)$
+            ,&nbsp;
+          $endif$
+        $endif$
+        $if(goodreadsLink)$
+        <span class="fact"><a href="$goodreadsLink$">Goodreads</a></span>
+        $endif$
       </div>
 
       <div class="fact">
@@ -45,13 +53,9 @@
   <div class="large-review">
     <h1>$title$</h1>
 
-    <h3>Summary</h3>
-
     <div class="summary">
       <p>$summary$</p>
     </div>
-
-    <h3>Thoughts</h3>
 
     <div class="review">
       $body$
