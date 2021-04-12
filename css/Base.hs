@@ -181,7 +181,9 @@ css = do
         <> a
         <> small
 
-
+  h1 ? small ? do
+    fontSize (px 16)
+    color    (grey)
 
   fontSelectors ? do
     standardFont
