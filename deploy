@@ -49,7 +49,7 @@ rsync -a --filter='P _site/'      \
 
 git add -A
 git commit -m "Update." || true
-git push origin gh-pages
+git push -f origin gh-pages
 
 
 # - Bring everything back
