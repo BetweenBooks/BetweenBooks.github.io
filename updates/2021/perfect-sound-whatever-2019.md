@@ -16,14 +16,15 @@ tags:
  - short-read
 date: 2021-04-25
 summary: 
-  I love James Acasters comedy; his show
-  [Repertoire](https://www.netflix.com/gb/title/80213803) is one of the funniest
-  I've ever seen; I also read his earlier book - [Classic
-  Scapes](https://uk.bookshop.org/books/james-acaster-s-classic-scrapes-the-hilarious-sunday-times-bestseller/9781472247193)
-  - which I really enjoyed, so I was already primed to like this one. It's quite
-  different from Classic Scrapes; it's much more personal and vulnerable, which
-  I really enjoyed; and it has a huge list of interesting music, which is great
-  if you're like me and struggle to think of new artists to listen to! Great
-  reading.
+  I love James Acasters comedy; his show <a
+  href="https://www.netflix.com/gb/title/80213803">Repertoire</a> is one of
+  the funniest I've ever seen; I also read his earlier book - <a
+  href="https://uk.bookshop.org/books/james-acaster-s-classic-scrapes-the-hilarious-sunday-times-bestseller/9781472247193">Classic
+  Scapes</a>
+  - which I really enjoyed, so I was already primed to like this one. It's
+  quite different from Classic Scrapes; it's much more personal and
+  vulnerable, which I really enjoyed; and it has a huge list of interesting
+  music, which is great if you're like me and struggle to think of new artists
+  to listen to! Great reading.
 ---
 
