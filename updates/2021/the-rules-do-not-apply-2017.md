@@ -12,6 +12,7 @@ imageUrl: /images/book-images/the-rules-do-not-apply-2017.png
 pages: 207
 tags: 
  - personal
+ - traumatic
 date: 2021-05-16
 summary: 
   I was really surprised and amazed by this book. I saw Ariel Levy talk at
