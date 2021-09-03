@@ -142,7 +142,7 @@ main = do
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
-        updates <- fmap (take 20) . recentFirst =<< loadAll "updates/**"
+        updates <- fmap (take 200) . recentFirst =<< loadAll "updates/**"
 
         let ctx =  constField "commit" commitDetails
                 <> listField "books"   bookContext (return updates)
