@@ -93,7 +93,7 @@ logo = do
 tags :: Css
 tags = do
   span #".tags" ? do
-    fontSize   (rem 0.8)
+    -- fontSize   (rem 0.8)
     lineHeight (em 1.7)
 
     a ? do
