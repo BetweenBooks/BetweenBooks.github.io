@@ -166,7 +166,7 @@ bookList = do
   
   query Clay.all [Media.maxWidth 1200] $ do
     body ? 
-      fontSize (px 20)
+      fontSize (px 28)
 
     -- Other side of the shelf
     forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
