@@ -1,50 +1,46 @@
 <div id="book-review">
-  <div>
+  <div class "book-info-wrapper">
     <div class="book-info">
       <div>
         <img src="$imageUrl$" />
       </div>
 
-      <div class="fact">
-        <span class="property">Author</span>
-        <div class="book-authors">$for(authors)$
-          $body$$sep$,
-        $endfor$
+      <div class="facts">
+        <div class="fact">
+          <span class="property">Author</span>
+          <div class="book-authors">$for(authors)$
+            $body$$sep$,
+          $endfor$
+          </div>
         </div>
-      </div>
 
-      <div class="fact">
-        <span class="property">Published by</span>
-        <span class="value">$publisher$, $yearPublished$</span>
-      </div>
+        <div class="fact">
+          <span class="property">Published by</span>
+          <span class="value">$publisher$, $yearPublished$</span>
+        </div>
 
-      <div class="fact">
-        <span class="property">Pages</span>
-        <span class="value">$pages$</span>
-      </div>
+        <div class="fact">
+          <span class="property">Pages</span>
+          <span class="value">$pages$</span>
+        </div>
 
-      <div class="fact">
-        <span class="property">Find on</span>
-        $if(bookshopLink)$
-        <span class="fact"><a href="$bookshopLink$">Bookshop</a></span>
-        $endif$
-        $if(bookshopLink)$
-          $if(goodreadsLink)$
-            ,&nbsp;
+        <div class="fact">
+          <span class="property">Find on</span>
+          $if(bookshopLink)$
+          <span class="fact"><a href="$bookshopLink$">Bookshop</a></span>
           $endif$
-        $endif$
-        $if(goodreadsLink)$
-        <span class="fact"><a href="$goodreadsLink$">Goodreads</a></span>
-        $endif$
-      </div>
+        </div>
 
-      <div class="fact">
-        <span class="property">Tags</span>
+        <div class="fact">
+          <span class="property">Tags</span>
 
-        <br />
-        $if(tags)$
-          <span class="tags">$tags$</span>
-        $endif$
+          <br />
+          <span class="tags">
+          $for(tags)$
+            <a href="/tags/$body$.html" class="tag $body$">$body$</a>$sep$,
+          $endfor$
+          </span>
+        </div>
       </div>
     </div>
   </div>

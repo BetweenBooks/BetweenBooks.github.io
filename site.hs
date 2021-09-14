@@ -79,21 +79,9 @@ main = do
 
     matchMetadata "updates/**.md" draftCheck $ do
       route $ setExtension "html"
-
-      -- TODO: I don't quite know why this doesn't work.
-      -- let getNonDraftTags :: MonadMetadata m => Identifier -> m [String]
-      --     getNonDraftTags identifier = do
-      --       metadata <- getMetadata identifier
-      --       let isDraft = draftCheck metadata
-      --       let tags    = fromMaybe [] $
-      --                         (lookupStringList "tags" metadata) `mplus`
-      --                         (map trim . splitAll "," <$> lookupString "tags" metadata)
-      --       return $ if isDraft then [] else tags
-
       tags <- buildTagsWith getTags "updates/**" (fromCapture "tags/*.html")
 
-      let ctx =  constField "commit" commitDetails
-              <> tagsField  "tags"   tags
+      let ctx =  constField "commit"  commitDetails
               <> bookContext
 
       compile $ getResourceBody

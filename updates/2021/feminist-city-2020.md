@@ -13,7 +13,7 @@ pages: 224
 tags: 
  - feminism 
  - informative 
- - urban planning
+ - urban-planning
 date: 2021-05-10
 summary: 
   An interesting discussion around how cities are not constructed for the

@@ -4,7 +4,6 @@ title: "Mexican Gothic"
 simpleTitle: "Mexican Gothic"
 authors: 
  - Silvia Moreno-Garcia 
- - Silvia Moreno-Garcia
 yearPublished: 2020
 publisher: "Del Rey"
 goodreadsLink: https://www.goodreads.com/book/show/53152636-mexican-gothic
