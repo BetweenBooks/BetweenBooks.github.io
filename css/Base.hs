@@ -5,6 +5,7 @@ import Clay
 import Control.Monad  ( forM_ )
 import Prelude hiding ( span
                       , div
+                      , rem
                       )
 import qualified Data.Text      as Text
 import qualified Clay.Media     as Media
@@ -92,7 +93,7 @@ logo = do
 tags :: Css
 tags = do
   span #".tags" ? do
-    fontSize   (em 0.95)
+    fontSize   (rem 0.8)
     lineHeight (em 1.7)
 
     a ? do
@@ -226,18 +227,17 @@ fonts = do
     textAlign justify
 
   p <> li ? do
-    -- fontSize   (px 14)
     lineHeight (em 1.8)
 
   h1 ? small ? do
-    fontSize (em 0.7)
+    fontSize (rem 1)
     color    (grey)
 
   div # ".book-title" ? do
     marginBottom (px 3)
     a ? do
       titleFont
-      fontSize (em 1.5)
+      fontSize (rem 1.2)
 
   div # ".date" ? do
     color dimgrey
@@ -316,7 +316,7 @@ reviewPage = do
     span # ".ch" ? do
       monoFont
       fontStyle normal
-      fontSize (em 0.9)
+      fontSize (rem 0.9)
       backgroundColor ("#eaeaea" :: Color)
 
   div # ".summary" <> div # ".review" ? do
