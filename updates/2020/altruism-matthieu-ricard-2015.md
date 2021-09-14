@@ -10,7 +10,7 @@ publisher: Little, Brown and Company
 yearPublished: 2015
 isbn: 0316208248
 isbn13: 9780316208239
-imageUrl: /images/book-images/altruism.png
+imageUrl: /images/book-images/altruism.webp
 pages: 864
 tags:
   - buddhism

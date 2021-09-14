@@ -8,7 +8,7 @@ yearPublished: 2020
 publisher: "Del Rey"
 goodreadsLink: https://www.goodreads.com/book/show/53152636-mexican-gothic
 bookshopLink: https://uk.bookshop.org/books/mexican-gothic/9781529402681
-imageUrl: /images/book-images/mexican-gothic-2020.png
+imageUrl: /images/book-images/mexican-gothic-2020.webp
 pages: 301
 tags: 
  - fun 

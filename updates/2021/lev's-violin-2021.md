@@ -8,7 +8,7 @@ yearPublished: 2021
 publisher: "Particular Books"
 goodreadsLink: https://www.goodreads.com/book/show/49469710-lev-s-violin
 bookshopLink: https://uk.bookshop.org/books/lev-s-violin-an-italian-adventure/9780241402559
-imageUrl: /images/book-images/lev's-violin-2021.png
+imageUrl: /images/book-images/lev's-violin-2021.webp
 pages: 256
 tags: 
  - informative 

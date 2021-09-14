@@ -8,7 +8,7 @@ yearPublished: 2019
 publisher: "Black Inc."
 goodreadsLink: https://www.goodreads.com/book/show/43800661-see-what-you-made-me-do
 bookshopLink: https://uk.bookshop.org/books/see-what-you-made-me-do-power-control-and-domestic-abuse/9781787383685
-imageUrl: /images/book-images/see-what-you-made-me-do-2019.png
+imageUrl: /images/book-images/see-what-you-made-me-do-2019.webp
 pages: 402
 tags: 
  - informative 

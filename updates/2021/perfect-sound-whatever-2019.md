@@ -8,7 +8,7 @@ yearPublished: 2019
 publisher: "Headline"
 goodreadsLink: https://www.goodreads.com/book/show/44096745-perfect-sound-whatever
 bookshopLink: https://uk.bookshop.org/books/perfect-sound-whatever-the-sunday-times-bestseller/9781472260314
-imageUrl: /images/book-images/perfect-sound-whatever-2019.png
+imageUrl: /images/book-images/perfect-sound-whatever-2019.webp
 pages: 304
 tags: 
  - fun 

@@ -9,7 +9,7 @@ yearPublished: 2020
 publisher: "MCD X Fsg Originals"
 goodreadsLink: https://www.goodreads.com/book/show/41940267-beowulf
 bookshopLink: https://uk.bookshop.org/books/beowulf-a-new-feminist-translation-of-the-epic-poem/9781911617822
-imageUrl: /images/book-images/beowulf-2020.png
+imageUrl: /images/book-images/beowulf-2020.webp
 pages: 140
 tags: 
  - adventurous 

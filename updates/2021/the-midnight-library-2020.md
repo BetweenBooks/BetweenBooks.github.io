@@ -8,7 +8,7 @@ yearPublished: 2020
 publisher: "Viking"
 goodreadsLink: https://www.goodreads.com/book/show/52578297-the-midnight-library
 bookshopLink: https://uk.bookshop.org/books/the-midnight-library-9781786892706/9781786892706
-imageUrl: /images/book-images/the-midnight-library-2020.png
+imageUrl: /images/book-images/the-midnight-library-2020.webp
 pages: 304
 tags: 
  - fun 

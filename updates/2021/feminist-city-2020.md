@@ -8,7 +8,7 @@ yearPublished: 2020
 publisher: "Verso"
 goodreadsLink: https://www.goodreads.com/book/show/53579627-feminist-city
 bookshopLink: https://uk.bookshop.org/books/feminist-city-claiming-space-in-a-man-made-world/9781788739818
-imageUrl: /images/book-images/feminist-city-2020.png
+imageUrl: /images/book-images/feminist-city-2020.webp
 pages: 224
 tags: 
  - feminism 

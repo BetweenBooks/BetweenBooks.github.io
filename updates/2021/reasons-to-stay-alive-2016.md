@@ -8,7 +8,7 @@ yearPublished: 2016
 publisher: "Penguin Books"
 goodreadsLink: https://www.goodreads.com/book/show/25733573-reasons-to-stay-alive
 bookshopLink: https://uk.bookshop.org/books/reasons-to-stay-alive/9781782116820
-imageUrl: /images/book-images/reasons-to-stay-alive-2016.png
+imageUrl: /images/book-images/reasons-to-stay-alive-2016.webp
 pages: 256
 tags: 
  - personal

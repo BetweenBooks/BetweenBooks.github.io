@@ -8,7 +8,7 @@ yearPublished: 2017
 publisher: "Random House"
 goodreadsLink: https://www.goodreads.com/book/show/32572166-the-rules-do-not-apply
 bookshopLink: https://uk.bookshop.org/books/the-rules-do-not-apply/9780349005324
-imageUrl: /images/book-images/the-rules-do-not-apply-2017.png
+imageUrl: /images/book-images/the-rules-do-not-apply-2017.webp
 pages: 207
 tags: 
  - personal

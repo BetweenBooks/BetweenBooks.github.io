@@ -8,7 +8,7 @@ yearPublished: 2018
 publisher: "Little, Brown and Company"
 goodreadsLink: https://www.goodreads.com/book/show/35959740-circe
 bookshopLink: https://uk.bookshop.org/books/circe-the-no-1-bestseller-from-the-author-of-the-song-of-achilles/9781408890042
-imageUrl: /images/book-images/circe-2018.png
+imageUrl: /images/book-images/circe-2018.webp
 pages: 393
 tags: 
  - fun 

@@ -8,7 +8,7 @@ yearPublished: 2020
 publisher: "Little Toller Books"
 goodreadsLink: https://www.goodreads.com/book/show/48853063-diary-of-a-young-naturalist
 bookshopLink: https://uk.bookshop.org/books/diary-of-a-young-naturalist-winner-of-the-wainwright-prize-for-nature-writing-2020/9781529109603
-imageUrl: /images/book-images/diary-of-a-young-naturalist-2020.png
+imageUrl: /images/book-images/diary-of-a-young-naturalist-2020.webp
 pages: 224
 tags: 
  - informative 

@@ -8,7 +8,7 @@ yearPublished: 2021
 publisher: "Verso"
 goodreadsLink: https://www.goodreads.com/book/show/52514416-tomorrow-sex-will-be-good-again
 bookshopLink: https://uk.bookshop.org/books/tomorrow-sex-will-be-good-again-women-and-desire-in-the-age-of-consent/9781788739160
-imageUrl: /images/book-images/tomorrow-sex-will-be-good-again-2021.png
+imageUrl: /images/book-images/tomorrow-sex-will-be-good-again-2021.webp
 pages: 160
 tags: 
  - informative 

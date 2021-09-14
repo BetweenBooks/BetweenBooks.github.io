@@ -8,7 +8,7 @@ yearPublished: 2019
 publisher: "Ecco"
 goodreadsLink: https://www.goodreads.com/book/show/42611087-semicolon
 bookshopLink: https://uk.bookshop.org/books/semicolon-how-a-misunderstood-punctuation-mark-can-improve-your-writing-enrich-your-reading-and-even-change-your-life/9780008291563
-imageUrl: /images/book-images/semicolon-2019.png
+imageUrl: /images/book-images/semicolon-2019.webp
 pages: 213
 tags: 
  - history 

@@ -8,7 +8,7 @@ yearPublished: 2021
 publisher: "Verso Books"
 goodreadsLink: https://www.goodreads.com/book/show/57677179-feminist-antifascism-counterpublics-of-the-common
 bookshopLink: https://uk.bookshop.org/books/feminist-antifascism-counterpublics-of-the-common/9781839761164
-imageUrl: /images/book-images/feminist-antifascism-2021.png
+imageUrl: /images/book-images/feminist-antifascism-2021.webp
 pages: 208
 tags: 
  - informative 

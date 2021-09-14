@@ -8,7 +8,7 @@ yearPublished: 2019
 publisher: "Doubleday"
 goodreadsLink: https://www.goodreads.com/book/show/40163119-say-nothing
 bookshopLink: https://uk.bookshop.org/books/say-nothing-a-true-story-of-murder-and-memory-in-northern-ireland/9780008159269
-imageUrl: /images/book-images/say-nothing-2019.png
+imageUrl: /images/book-images/say-nothing-2019.webp
 pages: 519
 tags: 
  - history 

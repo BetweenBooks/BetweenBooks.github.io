@@ -9,7 +9,7 @@ yearPublished: 2002
 publisher: "Vintage"
 goodreadsLink: https://www.goodreads.com/book/show/2517.My_Name_Is_Red
 bookshopLink: https://uk.bookshop.org/books/my-name-is-red/9780571268832
-imageUrl: /images/book-images/my-name-is-red-2002.png
+imageUrl: /images/book-images/my-name-is-red-2002.webp
 pages: 417
 tags: 
  - history 

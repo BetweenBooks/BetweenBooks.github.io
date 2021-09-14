@@ -8,7 +8,7 @@ yearPublished: 1975
 publisher: "Avon"
 goodreadsLink: https://www.goodreads.com/book/show/401514.Alive
 bookshopLink: https://uk.bookshop.org/books/alive-the-true-story-of-the-andes-survivors/9780099574521
-imageUrl: /images/book-images/alive-1975.png
+imageUrl: /images/book-images/alive-1975.webp
 pages: 318
 tags: 
  - adventurous 

@@ -9,7 +9,7 @@ publisher: Harper Perennial
 yearPublished: 1989
 isbn: 0060916303
 isbn13: 9780060916305
-imageUrl: /images/book-images/small-is-beautiful-ernst-f-schumacher-1989.png
+imageUrl: /images/book-images/small-is-beautiful-ernst-f-schumacher-1989.webp
 pages: 352
 date: 2020-09-18
 draft: draft

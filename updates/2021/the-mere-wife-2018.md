@@ -8,7 +8,7 @@ yearPublished: 2018
 publisher: "MCD"
 goodreadsLink: https://www.goodreads.com/book/show/36332136-the-mere-wife
 bookshopLink: https://uk.bookshop.org/books/the-mere-wife/9781911617631
-imageUrl: /images/book-images/the-mere-wife-2018.png
+imageUrl: /images/book-images/the-mere-wife-2018.webp
 pages: 308
 tags: 
  - feminism 

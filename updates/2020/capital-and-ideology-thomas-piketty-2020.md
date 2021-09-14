@@ -10,7 +10,7 @@ publisher: Belknap Press
 yearPublished: 2020
 isbn: 0674980824
 isbn13: 9780674980822
-imageUrl: /images/book-images/capital-and-ideology-thomas-piketty-2020.png
+imageUrl: /images/book-images/capital-and-ideology-thomas-piketty-2020.webp
 pages: 1,104
 date: 2020-09-17
 tags:

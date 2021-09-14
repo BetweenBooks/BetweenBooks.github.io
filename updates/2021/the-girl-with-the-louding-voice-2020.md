@@ -8,7 +8,7 @@ yearPublished: 2020
 publisher: "Dutton Books"
 goodreadsLink: https://www.goodreads.com/book/show/50214741-the-girl-with-the-louding-voice
 bookshopLink: https://uk.bookshop.org/books/the-girl-with-the-louding-voice-a-story-of-courage-that-will-win-over-your-heart-stylist/9781529359275
-imageUrl: /images/book-images/the-girl-with-the-louding-voice-2020.png
+imageUrl: /images/book-images/the-girl-with-the-louding-voice-2020.webp
 pages: 371
 tags: 
  - feminism
