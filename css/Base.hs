@@ -257,7 +257,7 @@ fonts = do
 
 mainHeader :: Css
 mainHeader = do
-  header ? do
+  "#header" ? do
     marginTop (px 100)
     ul ? do
       margin0
