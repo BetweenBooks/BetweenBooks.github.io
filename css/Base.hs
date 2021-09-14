@@ -168,8 +168,8 @@ bookList = do
     borderRight solid (px 0) black
   
   query Clay.all [Media.maxWidth 1200] $ do
-    body ? 
-      fontSize (px 28)
+    -- body ?
+    --   fontSize (px 28)
 
     div # ".book-content" ? do
       marginRight (px 20)
