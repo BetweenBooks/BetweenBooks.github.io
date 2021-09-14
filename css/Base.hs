@@ -163,6 +163,9 @@ bookList = do
   forM_ [ Text.pack . show $ (2*w + 1) | w <- [0..200]] $ \n -> do
     div # ".book" # nthChild n ? do
       borderRight solid (px 3) black
+
+  div #".book.last" ? do
+    borderRight solid (px 0) black
   
   query Clay.all [Media.maxWidth 1200] $ do
     body ? 
