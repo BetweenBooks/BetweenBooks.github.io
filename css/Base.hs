@@ -93,7 +93,7 @@ logo = do
 tags :: Css
 tags = do
   span #".tags" ? do
-    -- fontSize   (rem 0.8)
+    fontSize   (em 0.8)
     lineHeight (em 1.7)
 
     a ? do
@@ -165,6 +165,9 @@ bookList = do
       borderRight solid (px 3) black
   
   query Clay.all [Media.maxWidth 1200] $ do
+    body ? 
+      fontSize (px 20)
+
     -- Other side of the shelf
     forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
       div # ".book" # nthChild n ? do
@@ -230,14 +233,14 @@ fonts = do
     lineHeight (em 1.8)
 
   h1 ? small ? do
-    fontSize (rem 1)
+    fontSize (em 0.7)
     color    (grey)
 
   div # ".book-title" ? do
     marginBottom (px 3)
     a ? do
       titleFont
-      fontSize (rem 1.2)
+      fontSize (em 1.2)
 
   div # ".date" ? do
     color dimgrey
@@ -316,7 +319,7 @@ reviewPage = do
     span # ".ch" ? do
       monoFont
       fontStyle normal
-      fontSize (rem 0.9)
+      fontSize (em 0.9)
       backgroundColor ("#eaeaea" :: Color)
 
   div # ".summary" <> div # ".review" ? do
