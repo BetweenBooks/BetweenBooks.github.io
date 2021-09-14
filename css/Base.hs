@@ -45,7 +45,6 @@ css'
 basics :: Css
 basics = do
   body ? do
-    fontSize (px 14)
     margin0
     padding0
     backgroundColor white
@@ -93,11 +92,12 @@ logo = do
 tags :: Css
 tags = do
   span #".tags" ? do
-    fontSize (px 11)
-    monoFont
-    lineHeight (px 22)
+    fontSize   (em 0.95)
+    lineHeight (em 1.7)
 
-    a ? do textDecoration none
+    a ? do
+      monoFont
+      textDecoration none
 
     a #".tag" ? do
       allPadding (px 2)
@@ -216,6 +216,9 @@ links = do
 
 fonts :: Css
 fonts = do
+  body ? do
+    fontSize (px 14)
+
   let fontSelectors = p <> li <> blockquote <> a <> small
 
   fontSelectors ? do
@@ -223,18 +226,18 @@ fonts = do
     textAlign justify
 
   p <> li ? do
-    fontSize   (px 14)
-    lineHeight (px 26)
+    -- fontSize   (px 14)
+    lineHeight (em 1.8)
 
   h1 ? small ? do
-    fontSize (px 16)
+    fontSize (em 0.7)
     color    (grey)
 
   div # ".book-title" ? do
     marginBottom (px 3)
     a ? do
       titleFont
-      fontSize (px 20)
+      fontSize (em 1.5)
 
   div # ".date" ? do
     color dimgrey
