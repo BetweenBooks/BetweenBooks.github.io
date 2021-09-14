@@ -156,14 +156,19 @@ main = do
   
 
 bookContext :: Context String
-bookContext =
-  listFieldWith "authors" bbContext (\i -> do 
-    let identifier = itemIdentifier i 
-    metadata <- getMetadata identifier
-    let metas = maybe [] id $ lookupStringList "authors" metadata
-    return $ map (\x -> Item (fromFilePath x) x) metas
-  )
+bookContext 
+  =  asList "authors"
+  <> asList "tags"
   <> bbContext
+    where
+      -- HACK: Build a list from a list.
+      asList fieldName
+        = listFieldWith fieldName bbContext (\i -> do 
+            let identifier = itemIdentifier i 
+            metadata <- getMetadata identifier
+            let metas = maybe [] id $ lookupStringList fieldName metadata
+            return $ map (\x -> Item (fromFilePath x) x) metas
+          )
 
 
 bbContext :: Context String

@@ -26,39 +26,105 @@ css'
   >> fonts
   >> links
   >> mainHeader
-  >> bookList
+  >> mainContent
+  >> tags 
   >> body'
   >> footer'
 
+tags :: Css
+tags = do
+  span #".tags" ? do
+    fontSize (px 11)
+    monoFont
+
+    a ? do
+      textDecoration none
+
+    let mkTag t c = a # t ? borderBottom solid (px 2) c
+
+    mkTag ".travel" limegreen
+    mkTag ".personal" pink
+    mkTag ".quirky" violet
+    mkTag ".informative" lightskyblue
+    mkTag ".adventurous" sandybrown
+    mkTag ".short-read" lightslategray
+    mkTag ".philosophical" gold
+    mkTag ".feminism" salmon
+    mkTag ".non-fiction" lightsteelblue
+    mkTag ".fun" orange
+    mkTag ".fiction" rosybrown
+    mkTag ".history" peru
+    mkTag ".traumatic" mediumblue
+    mkTag ".urban" lightseagreen
+    mkTag ".economics" khaki
+    mkTag ".buddhism" blueviolet
+    mkTag ".long-read" plum
+    mkTag ".democracy" thistle
+    mkTag ".ethics" wheat
+    mkTag ".compassion" skyblue
+    mkTag ".empathy" slateblue
+
+
+
+mainContent :: Css
+mainContent = do
+  div # "#content" ? do
+    backgroundColor oldlace
+    marginTop    (px 10)
+    marginBottom (px 10)
+    allPadding   (px 30)
+    display      flex
+    flexDirection column
+
+
+
 bookList :: Css
 bookList = do
+  section # ".books" ? do
+    display  flex
+    flexWrap (FlexWrap "wrap")
+
+  div # ".book" ? do
+    display    flex
+    flexGrow   1
+    flexBasis  (pct 16)
+    allPadding (pct 2)
+
+    div # ".book-image" ? img ? do
+      maxWidth (pct 100)
+
+  div # ".book-content" ? do
+    marginTop auto
+
+
+
+bookList' :: Css
+bookList' = do
   div # ".books" ? do
     display       flex
     flexDirection row
     flexWrap      (FlexWrap "wrap")
 
     div # ".book" ? do
-      backgroundColor white
       flexWrap      (FlexWrap "wrap")
-      allPadding      (px 20)
-      allMargin       (px 10)
-      display         flex
-      flexDirection   row
-      border          solid (px 1) black
+      allPadding    (px 20)
+      allMargin     (px 0)
+      maxWidth      (px 400)
+      display       flex
+      flexDirection row
+      borderBottom  solid (px 10) black
 
       div # ".book-image" ? do
         marginRight (px 10)
-        img ? do
-          maxWidth (px 200)
+        img ? do 
+          maxHeight (pct 100)
+          minWidth (pct 100)
+          "object-fit" -: "cover"
+          verticalAlign vAlignBottom
 
       div # ".date" ? do
         menuFont
 
-      div # ".book-title" ? do
-        marginBottom (px 5)
-        a ? do
-          titleFont
-          fontSize (px 20)
 
     div # ".draft" ? do
       background lightcyan
@@ -72,6 +138,7 @@ links = do
       color black
     hover & do
       background ("#ffd381" :: Color)
+
 fonts :: Css
 fonts = do
   let fontSelectors = p <> li <> blockquote <> a <> small
@@ -87,6 +154,15 @@ fonts = do
   h1 ? small ? do
     fontSize (px 16)
     color    (grey)
+
+  div # ".book-title" ? do
+    marginBottom (px 5)
+    a ? do
+      titleFont
+      fontSize (px 20)
+
+  div # ".date" ? do
+    color dimgrey
 
 mainHeader :: Css
 mainHeader = do
@@ -239,14 +315,6 @@ css = do
     a ? do
       hover & do
         background white
-
-  div # "#content" ? do
-    backgroundColor oldlace
-    marginTop    (px 10)
-    marginBottom (px 10)
-    allPadding   (px 30)
-    display      flex
-    flexDirection column
 
 
   bookLayout

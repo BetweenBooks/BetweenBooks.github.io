@@ -1,4 +1,4 @@
-<div class="books">
+<section class="books">
   $for(books)$
     $if(draft)$
       <div class="book draft">
@@ -17,18 +17,25 @@
           <a href="$url$">$simpleTitle$</a>
         </div>
 
-        <div class="book-authors">
-          $for(authors)$
-            $body$$sep$,
-          $endfor$
+        <div class="book-meta">
+
+          <div class="book-authors">
+            by
+            $for(authors)$
+              $body$$sep$,
+            $endfor$
+          </div>
         </div>
 
-        <div class="book-summary">
-          <p>$summary$</p>
-        </div>
+        <p>$summary$</p>
 
+        <span class="tags">
+        $for(tags)$
+          <a href="/tags/$body$.html" class="tag $body$">$body$</a>$sep$,
+        $endfor$
+        </span>
       </div>
     </div>
   $endfor$
 
-</div>
+</section>
