@@ -168,6 +168,9 @@ bookList = do
     body ? 
       fontSize (px 28)
 
+    div # ".book-content" ? do
+      marginRight (px 20)
+
     -- Other side of the shelf
     forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
       div # ".book" # nthChild n ? do
@@ -190,7 +193,7 @@ bookList = do
       marginLeft (px 0)
 
   -- Smallest
-  query Clay.all [Media.maxWidth 600] $ do
+  query Clay.all [Media.maxWidth 800] $ do
     div # ".book" ? do
       flexDirection column
 
