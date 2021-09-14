@@ -270,7 +270,6 @@ mainHeader = do
       alignItems     center
       listStyleType  none
       justifyContent flexStart
-      flexDirection  row
 
     li ? do
       firstChild & do
