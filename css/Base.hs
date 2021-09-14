@@ -1,8 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE GADTs             #-}
-{-# LANGUAGE ConstraintKinds   #-}
-
 
 -- http://fvisser.nl/clay/
 import Clay
@@ -20,48 +17,141 @@ import qualified Clay.Pseudo    as P
 import qualified Clay.Media     as M
 import qualified Clay.Elements  as E
 
-
 main :: IO ()
-main = putCss css
+main = putCss css'
 
+css' :: Css
+css'
+  =  headings
+  >> fonts
+  >> links
+  >> mainHeader
+  >> bookList
+  >> body'
+  >> footer'
+
+bookList :: Css
+bookList = do
+  div # ".books" ? do
+    display       flex
+    flexDirection row
+    flexWrap      (FlexWrap "wrap")
+
+    div # ".book" ? do
+      backgroundColor white
+      flexWrap      (FlexWrap "wrap")
+      allPadding      (px 20)
+      allMargin       (px 10)
+      display         flex
+      flexDirection   row
+      border          solid (px 1) black
+
+      div # ".book-image" ? do
+        marginRight (px 10)
+        img ? do
+          maxWidth (px 200)
+
+      div # ".date" ? do
+        menuFont
+
+      div # ".book-title" ? do
+        marginBottom (px 5)
+        a ? do
+          titleFont
+          fontSize (px 20)
+
+    div # ".draft" ? do
+      background lightcyan
+
+
+links :: Css
+links = do
+  a ? do
+    color black
+    visited & do
+      color black
+    hover & do
+      background ("#ffd381" :: Color)
+fonts :: Css
+fonts = do
+  let fontSelectors = p <> li <> blockquote <> a <> small
+
+  fontSelectors ? do
+    coreTextFont
+    textAlign justify
+
+  p <> li ? do
+    fontSize   (px 14)
+    lineHeight (px 26)
+
+  h1 ? small ? do
+    fontSize (px 16)
+    color    (grey)
+
+mainHeader :: Css
+mainHeader = do
+  header ? do
+    marginTop (px 100)
+    ul ? do
+      margin0
+      padding0
+      marginLeft     (px 20)
+      display        flex
+      alignItems     center
+      listStyleType  none
+      justifyContent flexStart
+
+    li ? do
+      firstChild & do
+        marginRight (px 50)
+      padding0
+      a ? do
+        menuFont
+        display block
+        allMargin (px 12)
+
+headings :: Css
+headings = do
+  h1 <> h2 ? do
+    titleFont
+    fontWeight normal
+
+  h3 ? do
+    menuFont
+    fontStyle italic
+    fontWeight normal
+    marginTop (px 30)
+
+  h4 ? do
+    menuFont
+
+body' :: Css
+body' = mempty
+
+footer' :: Css
+footer' = 
+  footer ? do
+    marginTop    (px 20)
+    marginBottom (px 20)
+
+-- header
+
+--------------------------------------------------------------------
 
 allMargin n       = margin  n n n n
 allPadding n      = padding n n n n
 allBorderRadius n = borderRadius n n n n
 
-
 margin0  = margin  (px 0) (px 0) (px 0) (px 0)
 padding0 = padding (px 0) (px 0) (px 0) (px 0)
-
 
 coreTextFont = fontFamily ["Noto Serif JP"] [serif]
 monoFont     = fontFamily ["PT Mono"]       [monospace]
 titleFont    = fontFamily ["Calistoga"]     [serif]
 menuFont     = coreTextFont
 
+--------------------------------------------------------------------
 
--- |
-standardFont =
-  do 
-     coreTextFont
-     textAlign justify
-
-
--- | Header elements: (H1, H2, etc)
-headerStuff =
-  do
-    h1 <> h2 ? do
-      titleFont
-      fontWeight normal
-
-    h3 ? do
-      menuFont
-      fontStyle italic
-      fontWeight normal
-      marginTop (px 30)
-
-    h4 ? do
-      menuFont
 
 
 bookLayout :: Css
@@ -136,94 +226,14 @@ bookLayout = do
 
     
 
-  -- Homepage
-  div # ".books" ? do
-    display       flex
-    flexDirection row
-    flexWrap      (FlexWrap "wrap")
-
-    div # ".book" ? do
-      backgroundColor white
-      allPadding      (px 20)
-      allMargin       (px 10)
-      width           (px 600)
-      display         flex
-      flexDirection   row
-      border          solid (px 1) black
-
-      div # ".book-image" ? do
-        marginRight (px 10)
-        img ? do
-          maxWidth (px 200)
-
-      div # ".date" ? do
-        menuFont
-
-      div # ".book-title" ? do
-        marginBottom (px 5)
-        a ? do
-          titleFont
-          fontSize (px 20)
-
-    div # ".draft" ? do
-      background lightcyan
-
 
 css :: Css
 css = do
-  headerStuff
-
-
-  let fontSelectors 
-        = p 
-        <> li
-        <> blockquote
-        <> a
-        <> small
-
-  h1 ? small ? do
-    fontSize (px 16)
-    color    (grey)
-
-  fontSelectors ? do
-    standardFont
-
-  p <> li ? do
-    fontSize   (px 14)
-    lineHeight (px 26)
-
   body ? do
     fontSize (px 14)
     margin0
     padding0
     backgroundColor white
-
-  header ? do
-    marginTop (px 100)
-    ul ? do
-      margin0
-      padding0
-      marginLeft     (px 20)
-      display        flex
-      alignItems     center
-      listStyleType  none
-      justifyContent flexStart
-
-    li ? do
-      firstChild & do
-        marginRight (px 50)
-      padding0
-      a ? do
-        menuFont
-        display block
-        allMargin (px 12)
-
-  a ? do
-    color black
-    visited & do
-      color black
-    hover & do
-      background ("#ffd381" :: Color)
 
   li # "#logo" ? do
     a ? do
@@ -273,6 +283,3 @@ css = do
     after  & decoration
 
 
-  footer ? do
-    marginTop    (px 20)
-    marginBottom (px 20)
