@@ -200,6 +200,9 @@ bookList = do
     div # ".book" ? do
       flexDirection column
 
+    ul # "#menu" ? do
+      flexDirection column
+
     div # ".book-image" ? do
       width (pct 100)
       alignItems center
@@ -259,7 +262,7 @@ mainHeader :: Css
 mainHeader = do
   "#header" ? do
     marginTop (px 100)
-    ul ? do
+    ul # "#menu" ? do
       margin0
       padding0
       marginLeft     (px 20)
@@ -267,6 +270,7 @@ mainHeader = do
       alignItems     center
       listStyleType  none
       justifyContent flexStart
+      flexDirection  row
 
     li ? do
       firstChild & do
