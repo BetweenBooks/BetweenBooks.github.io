@@ -155,7 +155,7 @@ bookContext
             let identifier = itemIdentifier i 
             metadata <- getMetadata identifier
             let metas = maybe [] id $ lookupStringList fieldName metadata
-            return $ map (\x -> Item (fromFilePath x) x) metas
+            return $ map (\x -> Item (fromFilePath x) x) (sort metas)
           )
 
 
