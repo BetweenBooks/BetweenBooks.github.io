@@ -92,40 +92,46 @@ logo = do
 
 tags :: Css
 tags = do
-  span #".tags" ? do
-    fontSize   (em 0.8)
+  (span #".tags" <> div #".tagCloud" ) ? do
+    fontSize   (em 0.85)
     lineHeight (em 1.7)
 
+  a #".tag" ? do
+    monoFont
+    textDecoration none
+    allPadding (px 2)
+
+  let mkTag t c = a # t ? borderBottom solid (px 2) c
+
+  mkTag ".travel" limegreen
+  mkTag ".personal" pink
+  mkTag ".quirky" violet
+  mkTag ".informative" lightskyblue
+  mkTag ".adventurous" sandybrown
+  mkTag ".short-read" lightslategray
+  mkTag ".philosophical" gold
+  mkTag ".feminism" salmon
+  mkTag ".non-fiction" lightsteelblue
+  mkTag ".fun" orange
+  mkTag ".fiction" rosybrown
+  mkTag ".history" peru
+  mkTag ".traumatic" mediumblue
+  mkTag ".urban-planning" lightseagreen
+  mkTag ".economics" khaki
+  mkTag ".buddhism" blueviolet
+  mkTag ".long-read" plum
+  mkTag ".democracy" thistle
+  mkTag ".ethics" wheat
+  mkTag ".compassion" skyblue
+  mkTag ".empathy" slateblue
+
+  div #".tagCloud" ? do
+    fontSize (em 1.1)
+    marginLeft (px 20)
+    marginRight (px 20)
     a ? do
-      monoFont
-      textDecoration none
-
-    a #".tag" ? do
-      allPadding (px 2)
-
-    let mkTag t c = a # t ? borderBottom solid (px 2) c
-
-    mkTag ".travel" limegreen
-    mkTag ".personal" pink
-    mkTag ".quirky" violet
-    mkTag ".informative" lightskyblue
-    mkTag ".adventurous" sandybrown
-    mkTag ".short-read" lightslategray
-    mkTag ".philosophical" gold
-    mkTag ".feminism" salmon
-    mkTag ".non-fiction" lightsteelblue
-    mkTag ".fun" orange
-    mkTag ".fiction" rosybrown
-    mkTag ".history" peru
-    mkTag ".traumatic" mediumblue
-    mkTag ".urban-planning" lightseagreen
-    mkTag ".economics" khaki
-    mkTag ".buddhism" blueviolet
-    mkTag ".long-read" plum
-    mkTag ".democracy" thistle
-    mkTag ".ethics" wheat
-    mkTag ".compassion" skyblue
-    mkTag ".empathy" slateblue
+      allMargin (px 5)
+      lineHeight (em 2)
 
 mainContent :: Css
 mainContent = do
@@ -164,9 +170,6 @@ bookList = do
     div # ".book" # nthChild n ? do
       borderRight solid (px 3) black
 
-  div #".book.last" ? do
-    borderRight solid (px 0) black
-  
   query Clay.all [Media.maxWidth 1200] $ do
     -- body ?
     --   fontSize (px 28)

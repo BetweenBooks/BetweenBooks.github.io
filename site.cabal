@@ -8,6 +8,7 @@ executable site
   build-depends:    base == 4.*
                   , MissingH
                   , aeson
+                  , blaze-html
                   , clay
                   , containers
                   , directory

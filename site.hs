@@ -14,6 +14,10 @@ import           Hakyll.Core.UnixFilter (unixFilter)
 import           System.Environment (lookupEnv)
 import           System.FilePath
 import           Text.HTML.TagSoup (Tag (..))
+import qualified Text.Blaze.Html5                as H
+import qualified Text.Blaze.Html5.Attributes     as A
+import           Text.Blaze.Html                 (toHtml, toValue, (!))
+import           Text.Blaze.Html.Renderer.String (renderHtml)
 import qualified Data.Map as M
 
 
@@ -93,13 +97,12 @@ main = do
                   >>= relativizeUrls
 
       tagsRules tags $ \tag pattern -> do
-        let title = "Books tagged \"" ++ tag ++ "\""
         route idRoute
         compile $ do
           books    <- recentFirst =<< loadAll pattern
-          tagCloud <- renderTagCloud 90 180 tags
+          tagCloud <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
 
-          let tagCtx =  constField "title"    title
+          let tagCtx =  constField "tag"      tag
                      <> listField  "books"    bookContext (return books)
                      <> constField "tagCloud" tagCloud
                      <> constField "commit"   commitDetails
@@ -141,7 +144,26 @@ main = do
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
           >>= relativizeUrls
-  
+
+
+makeLink :: Double
+         -> Double
+         -> String
+         -> String
+         -> Int
+         -> Int
+         -> Int
+         -> String
+makeLink minSize maxSize tag url count min' max' =
+    let diff     = 1 + fromIntegral max' - fromIntegral min'
+        relative = (fromIntegral count - fromIntegral min') / diff
+        size     = floor $ minSize + relative * (maxSize - minSize) :: Int
+    in renderHtml $
+        H.a ! A.style (toValue $ "font-size: " ++ show size ++ "%")
+            ! A.href (toValue url)
+            ! A.class_ (toValue $ tag ++ " tag")
+            $ toHtml tag
+
 
 bookContext :: Context String
 bookContext 
