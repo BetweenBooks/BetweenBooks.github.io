@@ -3,7 +3,6 @@ id: beowulf-2020
 title: "Beowulf: A New Translation"
 simpleTitle: "Beowulf"
 authors: 
- - Unknown 
  - Maria Dahvana Headley
 yearPublished: 2020
 publisher: "MCD X Fsg Originals"
