@@ -40,7 +40,7 @@ css'
   >> mainContent
   >> reviewPage
   >> bookList
-  >> tags 
+  >> tags
   >> footerDecoration
 
 basics :: Css
@@ -323,6 +323,7 @@ reviewPage = do
     img ? do
       maxHeight (pct 100)
       maxWidth  (pct 100)
+      marginBottom (px 10)
       "object-fit" -: "cover"
 
   div # ".large-review" ? do
