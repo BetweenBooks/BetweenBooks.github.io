@@ -111,6 +111,7 @@ tags = do
   mkTag ".short-read" lightslategray
   mkTag ".philosophical" gold
   mkTag ".feminism" salmon
+  mkTag ".racism" chocolate
   mkTag ".non-fiction" lightsteelblue
   mkTag ".fun" orange
   mkTag ".fiction" rosybrown
