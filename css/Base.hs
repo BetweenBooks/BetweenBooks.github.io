@@ -126,7 +126,7 @@ tags = do
   mkTag ".compassion" skyblue
   mkTag ".empathy" slateblue
   mkTag ".activism" aquamarine
-  mkTag ".poetry" ghostwhite
+  mkTag ".poetry" orchid
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
