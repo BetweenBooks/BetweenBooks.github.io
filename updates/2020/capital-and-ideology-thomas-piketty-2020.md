@@ -18,11 +18,11 @@ tags:
   - long-read
   - democracy
 summary:
-  An incredibly detailed journey through various political regimes through the
+  <p>An incredibly detailed journey through various political regimes through the
   lens of understanding how they were structured and how that structure
   affects social inequality. Concludes with some very strong and interesting
   ideas about how we can move towards a global social democracy, and how to
-  finance a substantial social state.
+  finance a substantial social state.</p>
 ---
 
 #### Rough Summary
@@ -75,7 +75,7 @@ the field as a whole, comes up with next!
 
 <span class="ch">Introduction</span>
 
-- Page 2 - Definition of an inequality regime: 
+- Page 2 - Definition of an inequality regime:
 
   > A set of discourses and institutional arrangements intended to justify and
   > structure the economic, social, and political inequalities of a given
@@ -112,7 +112,7 @@ this would be so precise.
 <span class="ch">The Invention of Ownership Societies</span>
 
 - Page 90 and 91
-  
+
   > ... one can estimate that the Church held 30 percent or more of all
   > property in Spain in 1750.
   >
@@ -202,7 +202,7 @@ lives of the colonizers.
 <span class="ch">Ternary Societies and Colonialism: The Case of India</span>
 
 - Page 315
-  
+
   > One finds in all civilizations the idea that strict assignment of social
   > positions and political functions can serve as a check on hubris and ego;
   > this is often used as a defence of hereditary hierarchies, especially in

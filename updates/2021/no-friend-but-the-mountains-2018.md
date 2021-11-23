@@ -20,14 +20,14 @@ tags:
  - poetry
 date: 2021-11-21
 summary: |
-  Another amazing book by a refugee who was imprisoned at the time. It is
-  about his experience in the prison; something that had been totally
-  covered up by the Australian government. At the time the book was
-  published he was <i>still</i> in prison! It's exceptionally readable,
-  interesting and engaging, but it does have some quite traumatic
-  sections. It's has a beautifully written style interspersed with
-  sections of poetry. You will certainly leave with very strong feelings
-  for what people like this have been put through by our governments. I
-  really gained a lot from reading it.
+  <p>Another amazing book, this one was written by a refugee who was
+  imprisoned at the time. It is about his experience in the prison; something
+  that had been totally covered up by the Australian government. At the time
+  the book was published he was <i>still</i> in prison! It's exceptionally
+  readable, interesting and engaging, but it does have some quite traumatic
+  sections. It's has a beautifully written style interspersed with sections of
+  poetry. You will certainly leave with very strong feelings for what people
+  like this have been put through by our governments. I really gained a lot
+  from reading it.</p>
 ---
 

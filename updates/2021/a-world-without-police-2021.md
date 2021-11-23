@@ -2,7 +2,7 @@
 id: a-world-without-police-2021
 title: "A World Without Police: How Strong Communities Make Cops Obsolete"
 simpleTitle: "A World Without Police"
-authors: 
+authors:
  - Geo Maher
 yearPublished: 2021
 publisher: "Verso"
@@ -10,11 +10,11 @@ goodreadsLink: https://www.goodreads.com/book/show/58186785-a-world-without-poli
 bookshopLink: https://uk.bookshop.org/books/a-world-without-police-how-strong-communities-make-cops-obsolete/9781839760051
 imageUrl: /images/book-images/a-world-without-police-2021.webp
 pages: 288
-tags: 
+tags:
  - activism
 date: 2021-10-03
-summary: | 
-  This is a very legitimate and intense book, with a strong American
+summary: |
+  <p>This is a very legitimate and intense book, with a strong American
   focus. It argues that the police are actively harmful, and points out
   all sorts of issues with "improvement" programs, and more generally the
   structure that supports the policing apparatus. I went in to this book
@@ -29,6 +29,6 @@ summary: |
   But I suppose this idea is just developing, and this was my first
   entrypoint into this kind of thinking. Overall, I do recommend this
   book; I think it's very passionately written and contains a lot of good
-  arguments. But it's also quite confronting, so be prepared!
+  arguments. But it's also quite confronting, so be prepared!</p>
 ---
 

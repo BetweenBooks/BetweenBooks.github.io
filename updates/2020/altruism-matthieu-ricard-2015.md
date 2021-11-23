@@ -21,11 +21,11 @@ tags:
   - long-read
 date: 2020-09-01
 summary:
-  An exploration into compassion, kindness, empathy, innate goodness and how
+  <p>An exploration into compassion, kindness, empathy, innate goodness and how
   these concepts relate to the idea of being altruistic. Comes from a Buddhist
   point of view, but has a very broad approach and generally-applicable advice
   and thoughts. Particularly good comments around the idea of emotional
-  burn-out and (Buddhist) techniques for managing it.
+  burn-out and (Buddhist) techniques for managing it.</p>
 ---
 
 #### Rough Summary
@@ -55,7 +55,7 @@ reminding yourself of useful arguments about how people are essentially good.
   > "The rich man has little compassion for the poor man,
   > since he can't imagine himself poor".
 
-- Page 51 - Alexandre Jollien: 
+- Page 51 - Alexandre Jollien:
 
   > "In pity, sadness comes first. I am sad that the other is
   > suffering, but I don't really love them. In compassion, love comes first."
