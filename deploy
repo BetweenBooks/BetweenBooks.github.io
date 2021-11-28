@@ -54,5 +54,5 @@ git push -f origin gh-pages
 
 # - Bring everything back
 
-git checkout master
+git checkout main
 git stash pop
