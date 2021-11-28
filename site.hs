@@ -122,16 +122,17 @@ main = do
       tagsRules tags $ \tag pattern -> do
         route idRoute
         compile $ do
-          books    <- recentFirst =<< loadAll pattern
-          tagCloud <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
-          -- TODO: Compute the books on the shelf with these tags.
-          -- shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
+          books        <- recentFirst =<< loadAll pattern
+          tagCloud     <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
+          -- TODO: Load the shelf updates with the specific tags.
+          -- shelfUpdates <- byIssueCreationTime =<< loadAll pattern
+          let shelfUpdates = []
 
-          let tagCtx =  constField "tag"      tag
-                     <> listField  "books"    bookContext (return books)
-                      <> listField "shelfItems" bookContext (return [])
-                     <> constField "tagCloud" tagCloud
-                     <> constField "commit"   commitDetails
+          let tagCtx =  constField "tag"        tag
+                     <> listField  "books"      bookContext (return books)
+                     <> listField  "shelfItems" bookContext (return shelfUpdates)
+                     <> constField "tagCloud"   tagCloud
+                     <> constField "commit"     commitDetails
                      <> bookContext
 
           makeItem ""
