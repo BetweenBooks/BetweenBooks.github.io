@@ -1,12 +1,19 @@
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TypeApplications  #-}
-{-# LANGUAGE FlexibleContexts  #-}
-{-# LANGUAGE DeriveGeneric     #-} 
+{-# language DeriveGeneric     #-}
+{-# language FlexibleContexts  #-}
+{-# language OverloadedStrings #-}
+{-# language TupleSections     #-}
+{-# language TypeApplications  #-}
 
+import           Data.Time.Clock             (UTCTime (..))
+import           Data.Time.Format            (parseTimeM)
+import           Data.List                   (sortBy)
+import           Data.Ord                    (comparing)
+import           Data.Time.Locale.Compat     (TimeLocale, defaultTimeLocale)
+import           Control.Monad (liftM)
 import           Data.Aeson
 import           Data.List
 import           Data.String.Utils (strip)
-import           Data.Maybe (fromJust, isJust, fromMaybe)
+import           Data.Maybe (fromJust, isJust, fromMaybe, maybe)
 import           Data.String.Conv (toS)
 import           GHC.Generics
 import           Hakyll
@@ -33,7 +40,7 @@ config = defaultConfiguration
         | ".swp"  `isSuffixOf` fileName = True
         --
         -- For git annoyances related to zsh.
-        -- 
+        --
         | "/.git/" `isInfixOf` path     = True
         | otherwise                     = False
       where
@@ -46,7 +53,7 @@ main = do
   imageMetaData <- computeImageMetaData
   showDrafts    <- maybe False read <$> lookupEnv "SHOW_DRAFTS"
 
-  hakyllWith config $ do 
+  hakyllWith config $ do
     match "favicon.ico" $ do
       route idRoute
       compile copyFileCompiler
@@ -75,12 +82,28 @@ main = do
       compile $ fmap compressCss <$>  cssStr
 
 
-    let draftCheck = if showDrafts then 
+    let draftCheck = if showDrafts then
                         const True
                      else
                         \m -> lookupString "draft" m /= Just "draft"
 
+    -- ~ Shelf updates
+    match "shelf/**.md" $ do
+      route $ setExtension "html"
 
+      let ctx =  constField "commit"  commitDetails
+              <> bookContext
+
+      compile $ getResourceBody
+                  >>= renderPandoc
+                  >>= loadAndApplyTemplate "templates/shelf.html"  ctx
+                  >>= loadAndApplyTemplate "templates/default.html" ctx
+                  >>= applyAsTemplate ctx
+                  >>= lqipImages imageMetaData
+                  >>= relativizeUrls
+
+
+    -- ~ Normal updates
     matchMetadata "updates/**.md" draftCheck $ do
       route $ setExtension "html"
       tags <- buildTagsWith getTags "updates/**" (fromCapture "tags/*.html")
@@ -101,9 +124,11 @@ main = do
         compile $ do
           books    <- recentFirst =<< loadAll pattern
           tagCloud <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
+          shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
 
           let tagCtx =  constField "tag"      tag
                      <> listField  "books"    bookContext (return books)
+                      <> listField "shelfItems" bookContext (return shelfUpdates)
                      <> constField "tagCloud" tagCloud
                      <> constField "commit"   commitDetails
                      <> bookContext
@@ -114,36 +139,63 @@ main = do
             >>= lqipImages imageMetaData
             >>= relativizeUrls
 
-    match (fromList 
+    match (fromList
             [ "about.md"
             ]) $ do
       route $ setExtension "html"
       compile $ do
         let ctx =  constField "commit" commitDetails
                 <> bbContext
-      
+
         getResourceBody
           >>= renderPandoc
           >>= applyAsTemplate ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
           >>= relativizeUrls
-  
+
 
     match "index.md" $ do
       route $ setExtension "html"
       compile $ do
-        updates <- fmap (take 200) . recentFirst =<< loadAll "updates/**"
+        updates <- recentFirst =<< loadAll "updates/**"
+        shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
 
-        let ctx =  constField "commit" commitDetails
-                <> listField "books"   bookContext (return updates)
+        let ctx =  constField "commit"    commitDetails
+                <> listField "books"      bookContext (return updates)
+                <> listField "shelfItems" bookContext (return shelfUpdates)
                 <> bbContext
-      
+
         getResourceBody
           >>= applyAsTemplate ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
           >>= relativizeUrls
+
+
+byIssueCreationTime :: (MonadMetadata m) => [Item a] -> m [Item a]
+byIssueCreationTime = liftM reverse . chronological'
+
+
+-- TODO: Clean up these hacks.
+chronological' :: (MonadMetadata m) => [Item a] -> m [Item a]
+chronological' =
+    sortByM $ getItemUTC' defaultTimeLocale . itemIdentifier
+  where
+    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
+    sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
+                   mapM (\x -> liftM (x,) (f x)) xs
+
+getItemUTC' :: (MonadMetadata m)
+            => TimeLocale        -- ^ Output time locale
+            -> Identifier        -- ^ Input page
+            -> m UTCTime         -- ^ Parsed UTCTime
+getItemUTC' locale id' = do
+    metadata <- getMetadata id'
+    let tryField k fmt = lookupString k metadata >>= parseTime' fmt
+    return $ fromMaybe (error "Bad date") (tryField "issueCreatedAt" "%Y-%m-%dT%H:%M:%SZ")
+  where
+    parseTime' = parseTimeM True locale
 
 
 makeLink :: Double
@@ -166,15 +218,15 @@ makeLink minSize maxSize tag url count min' max' =
 
 
 bookContext :: Context String
-bookContext 
+bookContext
   =  asList "authors"
   <> asList "tags"
   <> bbContext
     where
       -- HACK: Build a list from a list.
       asList fieldName
-        = listFieldWith fieldName bbContext (\i -> do 
-            let identifier = itemIdentifier i 
+        = listFieldWith fieldName bbContext (\i -> do
+            let identifier = itemIdentifier i
             metadata <- getMetadata identifier
             let metas = maybe [] id $ lookupStringList fieldName metadata
             return $ map (\x -> Item (fromFilePath x) x) (sort metas)
@@ -182,7 +234,7 @@ bookContext
 
 
 bbContext :: Context String
-bbContext = 
+bbContext =
   constField "rootUrl" "https://betweenbooks.com.au"
   <> dateField "date" "%B %e, %Y"
   <> defaultContext
@@ -195,7 +247,7 @@ lqipImages :: ImageMetaDataMap -> Item String -> Compiler (Item String)
 lqipImages imageMetaData = return . fmap (withTags . switchInLqipImages $ imageMetaData)
 
 
-data ImageData = ImageData 
+data ImageData = ImageData
   { base64String :: String
   , width        :: Int
   , height       :: Int
@@ -215,7 +267,7 @@ computeImageMetaData = do
   let decoded' :: [Maybe ImageData]
       decoded' = map (decode' . toS) items
       decoded  = map fromJust (filter isJust decoded')
-  
+
   return $ M.fromList (map (\i -> (name i, i)) decoded)
 
 

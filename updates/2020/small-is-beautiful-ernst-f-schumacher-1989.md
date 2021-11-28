@@ -17,9 +17,9 @@ tags:
   - economics
   - buddhism
 summary:
-  Apparently a classic of economic thought around "Buddhist" economics and
+  <p>Apparently a classic of economic thought around "Buddhist" economics and
   thinking around renewable resources. Surprisingly sexist in some parts and
-  not particularly "Buddhist" in my view.
+  not particularly "Buddhist" in my view.</p>
 ---
 
 #### Rough Summary

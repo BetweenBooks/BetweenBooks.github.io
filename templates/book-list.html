@@ -26,7 +26,7 @@
           </div>
         </div>
 
-        <p>$summary$</p>
+        $summary$
 
         <span class="tags">
         $for(tags)$
@@ -37,7 +37,19 @@
     </div>
   $endfor$
   <div class="book last">
-    &nbsp;
-  </div>
+    <h1>On the shelf <small>&mdash; Newly obtained but not yet reviewed ...</small></h1>
 
+    <div class="newbooks">
+      $for(shelfItems)$
+      <div class="bb">
+        <a href="$bookshopLink$"><img alt="$simpleTitle$" src="$imageUrl$" /></a>
+        <p><a href="$bookshopLink$">$simpleTitle$</a></p>
+        $for(authors)$
+        <span>$body$</span>
+        $endfor$
+        <span>$yearPublished$</span>
+      </div>
+      $endfor$
+    </div>
+  </div>
 </section>

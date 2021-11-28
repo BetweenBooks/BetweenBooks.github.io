@@ -20,5 +20,7 @@ executable site
                   , system-filepath
                   , tagsoup
                   , text
+                  , time
+                  , time-locale-compat
   ghc-options:      -threaded -Wall
   default-language: Haskell2010

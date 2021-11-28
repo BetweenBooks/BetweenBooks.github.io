@@ -2,7 +2,7 @@
 id: feminist-antifascism-2021
 title: "Feminist Antifascism. Counterpublics of the Common"
 simpleTitle: "Feminist Antifascism"
-authors: 
+authors:
  - Ewa Majewska
 yearPublished: 2021
 publisher: "Verso Books"
@@ -10,14 +10,14 @@ goodreadsLink: https://www.goodreads.com/book/show/57677179-feminist-antifascism
 bookshopLink: https://uk.bookshop.org/books/feminist-antifascism-counterpublics-of-the-common/9781839761164
 imageUrl: /images/book-images/feminist-antifascism-2021.webp
 pages: 208
-tags: 
- - informative 
- - feminism 
- - philosophical 
+tags:
+ - informative
+ - feminism
+ - philosophical
  - non-fiction
 date: 2021-08-22
-summary: 
-  I found this book very interesting. One concept it introduced to me was
+summary:
+  <p>I found this book very interesting. One concept it introduced to me was
   the idea of "solidarity" instead of "support", in social causes. She
   makes the argument that it's better to stand in "solidarity" with one
   other, and for "me" to "support" you. Her argument, in part, is because
@@ -30,6 +30,6 @@ summary:
   you're interested in how people are being politically-active and how
   feminism should sit at the center of anti-fascism; also particularly
   interesting to get a Polish perspective on this idea; as it's not one
-  I've heard before.
+  I've heard before.</p>
 ---
 
