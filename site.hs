@@ -124,11 +124,12 @@ main = do
         compile $ do
           books    <- recentFirst =<< loadAll pattern
           tagCloud <- renderTagCloudWith makeLink (intercalate " ") 90 180 tags
-          shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
+          -- TODO: Compute the books on the shelf with these tags.
+          -- shelfUpdates <- byIssueCreationTime =<< loadAll "shelf/*.md"
 
           let tagCtx =  constField "tag"      tag
                      <> listField  "books"    bookContext (return books)
-                      <> listField "shelfItems" bookContext (return shelfUpdates)
+                      <> listField "shelfItems" bookContext (return [])
                      <> constField "tagCloud" tagCloud
                      <> constField "commit"   commitDetails
                      <> bookContext
