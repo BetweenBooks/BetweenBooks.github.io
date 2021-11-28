@@ -7,17 +7,18 @@ div.book-info img {
 div.newbooks {
   margin: 20px;
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
-  width: 100%;
 }
 
 div.newbooks img {
   width: 80px;
-  border: solid 1px black;
+  border-radius: 80px;
 }
 
 div.newbooks div.bb {
+  border-top: solid 3px silver;
   box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
   width: 90px;
   margin: 10px;
@@ -45,4 +46,6 @@ div.last {
 div.bb span {
   font-size: 0.9em;
   color: #696969;
+  text-align: center;
+  margin-bottom: 10px;
 }
