@@ -3,11 +3,11 @@
 
 ### Todo
 
+- [ ] Next/Previous page
+- [ ] Mailing list
+- [ ] Make a nice Favicon by hand?
 - [x] Get the little cards working
 - [x] Tags
 - [x] Add png compression as part of the build: <http://pngnq.sourceforge.net/> (we use webp instead)
-- [ ] Drafts
-- [ ] Next/Previous page
-- [ ] Reinstate LQIP
-- [ ] Mailing list
-- [ ] Make nice Favicons by hand?
+- [x] Reinstate LQIP
+- [x] Drafts
