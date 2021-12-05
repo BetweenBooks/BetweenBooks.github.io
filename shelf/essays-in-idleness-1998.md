@@ -13,7 +13,7 @@ goodreadsLink: https://www.goodreads.com/book/show/321596.Essays_in_Idleness?
 bookshopLink: https://uk.bookshop.org/books/essays-in-idleness-and-hojoki/9780141192109
 pages: 235
 tags: 
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-23T16:36:57Z
 ---
 

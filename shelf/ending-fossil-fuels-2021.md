@@ -12,7 +12,7 @@ bookshopLink: https://uk.bookshop.org/books/ending-fossil-fuels-why-net-zero-is-
 pages: 208
 tags: 
  - economics
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-23T13:46:33Z
 ---
 

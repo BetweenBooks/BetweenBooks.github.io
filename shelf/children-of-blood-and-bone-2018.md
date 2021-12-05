@@ -13,7 +13,7 @@ pages: 544
 tags: 
  - feminism 
  - fiction
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-21T18:25:17Z
 ---
 

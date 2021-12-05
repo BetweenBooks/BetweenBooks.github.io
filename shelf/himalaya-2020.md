@@ -11,7 +11,7 @@ goodreadsLink: https://www.goodreads.com/book/show/49098218-himalaya
 bookshopLink: https://uk.bookshop.org/books/himalaya-a-human-history-9781847924131/9781784704483
 pages: 592
 tags: 
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-28T11:52:20Z
 ---
 

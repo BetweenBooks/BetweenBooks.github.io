@@ -11,7 +11,7 @@ goodreadsLink: https://www.goodreads.com/book/show/50353808-notes-from-deep-time
 bookshopLink: https://uk.bookshop.org/books/notes-from-deep-time-a-journey-through-our-past-and-future-worlds/9781788161633
 pages: 320
 tags: 
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-24T13:51:12Z
 ---
 

@@ -13,7 +13,7 @@ pages: 524
 tags: 
  - feminism 
  - physics
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-22T09:59:39Z
 ---
 

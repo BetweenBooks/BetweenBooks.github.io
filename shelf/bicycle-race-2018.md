@@ -13,7 +13,7 @@ pages: 191
 tags: 
  - activism 
  - racism
-date: 2021-11-28
+date: 2021-12-05
 issueCreatedAt: 2021-11-28T13:15:45Z
 ---
 
