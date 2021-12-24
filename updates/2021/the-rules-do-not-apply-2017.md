@@ -18,7 +18,7 @@ summary:
   <p>I was really surprised and amazed by this book. I saw Ariel Levy talk at
   the amazing festival in Melbourne. I didn't know anything about her, but
   the image I did form didn't match what was revealed in this book. Very
-  thought and captivating, and a relatable account of one persons life and
+  thoughtful and captivating, and a relatable account of one persons life and
   dreams. Definitely recommended reading for an insight into a life that
   is quite different from my own.</p>
 ---
