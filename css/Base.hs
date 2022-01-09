@@ -128,6 +128,7 @@ tags = do
   mkTag ".activism" aquamarine
   mkTag ".poetry" orchid
   mkTag ".climate" honeydew
+  mkTag ".books" lavender
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
@@ -157,7 +158,7 @@ bookList = do
     allPadding (pct 2)
     borderBottom solid (px 3) black
 
-  ".books" ? do
+  section # ".books" ? do
     display flex
     flexWrap (FlexWrap "wrap")
 
