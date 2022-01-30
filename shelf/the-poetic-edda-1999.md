@@ -13,7 +13,7 @@ bookshopLink: https://uk.bookshop.org/books/the-poetic-edda-9780199675340/978019
 pages: 323
 tags: 
  - poetry
-date: 2021-12-05
+date: 2022-01-30
 issueCreatedAt: 2021-11-23T13:42:34Z
 ---
 
