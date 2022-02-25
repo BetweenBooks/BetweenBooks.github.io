@@ -8,6 +8,7 @@
 
       <div class="book-image">
         <a href="$url$"><img class="book" src="$imageUrl$" alt="$simpleTitle$ - Cover" /></a>
+        <small>Find on <a href="$affiliateLink$">Bookshop.org</a></small>
       </div>
 
       <div class="book-content">
@@ -42,8 +43,8 @@
     <div class="newbooks">
       $for(shelfItems)$
       <div class="bb">
-        <a href="$bookshopLink$"><img alt="$simpleTitle$" src="$imageUrl$" /></a>
-        <p><a href="$bookshopLink$">$simpleTitle$</a></p>
+        <a href="$affiliateLink$"><img alt="$simpleTitle$" src="$imageUrl$" /></a>
+        <p><a href="$affiliateLink$">$simpleTitle$</a></p>
         $for(authors)$
         <span>$body$</span>
         $endfor$

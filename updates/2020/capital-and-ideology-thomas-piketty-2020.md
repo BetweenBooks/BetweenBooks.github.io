@@ -5,7 +5,7 @@ simpleTitle: "Capital and Ideology"
 authors:
   - Thomas Piketty
 goodreadsLink: https://www.goodreads.com/book/show/50849430-capital-and-ideology
-bookshopLink: https://bookshop.org/a/13989/9780674980822
+bookshopLink: https://uk.bookshop.org/a/7342/9780674980822
 publisher: Belknap Press
 yearPublished: 2020
 isbn: 0674980824

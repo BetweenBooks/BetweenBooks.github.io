@@ -12,6 +12,7 @@ import           Data.Time.Locale.Compat     (TimeLocale, defaultTimeLocale)
 import           Control.Monad (liftM)
 import           Data.Aeson
 import           Data.List
+import           Data.List.Split (splitOn)
 import           Data.String.Utils (strip)
 import           Data.Maybe (fromJust, isJust, fromMaybe, maybe)
 import           Data.String.Conv (toS)
@@ -224,8 +225,17 @@ bookContext
   =  asList "authors"
   <> asList "tags"
   <> bbContext
+  <> mkAffiliate "affiliateLink"
     where
-      -- HACK: Build a list from a list.
+      -- Make the affiliate link from the bookshop link.
+      mkAffiliate fieldName
+        = field fieldName (\i -> do
+            let identifier = itemIdentifier i
+            metadata <- getMetadata identifier
+            let link = maybe "" affiliateLink $ lookupString "bookshopLink" metadata
+            return link
+          )
+
       asList fieldName
         = listFieldWith fieldName bbContext (\i -> do
             let identifier = itemIdentifier i
@@ -233,6 +243,17 @@ bookContext
             let metas = maybe [] id $ lookupStringList fieldName metadata
             return $ map (\x -> Item (fromFilePath x) x) (sort metas)
           )
+
+
+-- | Bookshop.org affiliate code.
+affiliateCode :: String
+affiliateCode = "7342"
+
+
+affiliateLink :: String -> String
+affiliateLink s = 
+  let items = splitOn "/" s
+   in "https://uk.bookshop.org/a/" ++ affiliateCode ++ "/" ++ last items
 
 
 bbContext :: Context String
@@ -260,6 +281,7 @@ data ImageData = ImageData
 instance FromJSON ImageData
 
 type ImageMetaDataMap = M.Map String ImageData
+
 
 
 computeImageMetaData :: IO (ImageMetaDataMap)

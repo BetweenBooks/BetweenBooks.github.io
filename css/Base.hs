@@ -167,8 +167,15 @@ bookList = do
     paddingLeft (px 20)
     flexDirection column
 
-  ".book-image" ? img ? do
-    width (px 200)
+
+  ".book-image" ? do
+    display flex
+    alignItems center
+    flexDirection column
+    small ? do
+      marginTop (px 10)
+    img ? do
+      width (px 200)
 
   -- Generate the cool shelves.
   forM_ [ Text.pack . show $ (2*w + 1) | w <- [0..200]] $ \n -> do

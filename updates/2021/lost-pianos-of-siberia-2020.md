@@ -7,7 +7,7 @@ authors:
 yearPublished: 2020
 publisher: "Grove Press"
 goodreadsLink: https://www.goodreads.com/book/show/50616973-the-lost-pianos-of-siberia
-bookshopLink: https://bookshop.org/books/lost-pianos-of-siberia-9780802149299/9780802149282
+bookshopLink: https://uk.bookshop.org/books/the-lost-pianos-of-siberia-a-sunday-times-paperback-of-2021/9781784162849
 imageUrl: /images/book-images/lost-pianos-of-siberia-2020.webp
 pages: 448
 tags:
