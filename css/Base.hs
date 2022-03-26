@@ -216,6 +216,11 @@ bookList = do
     "#header" ? do
       marginLeft (px 0)
 
+    div # "#content" ? do
+      paddingLeft  (px 30)
+      paddingRight (px 30)
+
+
     div # ".book" ? do
       flexDirection column
 
