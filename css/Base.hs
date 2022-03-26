@@ -142,9 +142,10 @@ mainContent :: Css
 mainContent = do
   div # "#content" ? do
     backgroundColor oldlace
-    marginTop    (px 10)
     marginBottom (px 10)
     allPadding   (px 30)
+    paddingLeft  (px 60)
+    paddingRight (px 60)
     display      flex
     flexDirection column
 
@@ -212,6 +213,9 @@ bookList = do
 
   -- Smallest
   query Clay.all [Media.maxWidth 800] $ do
+    "#header" ? do
+      marginLeft (px 0)
+
     div # ".book" ? do
       flexDirection column
 
@@ -276,7 +280,8 @@ fonts = do
 mainHeader :: Css
 mainHeader = do
   "#header" ? do
-    marginTop (px 100)
+    marginTop  (px 100)
+    marginLeft (px 50)
     ul # "#menu" ? do
       margin0
       padding0
