@@ -12,10 +12,8 @@ div.book-info img {
   height:              30pt;
   background-size:     30pt;
   background-position: 0 0;
-  background-color:    oldlace;
   background-image:    url(/images/book-animation.svg);
   cursor:              pointer;
-  border:              solid 1px black;
 }
 
 div.newbooks {
