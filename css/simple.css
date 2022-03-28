@@ -3,6 +3,18 @@ div.book-info img {
   box-shadow: 4.8px 9.6px 9.6px hsl(0deg 0% 0% / 0.35);
 }
 
+#book-animation {
+  position:            fixed;
+  left:                0px;
+  top:                 0px;
+  margin:              10px;
+  width:               30pt;
+  height:              30pt;
+  background-size:     30pt;
+  background-position: 0 0;
+  background-image:    url(/images/book-animation.svg);
+  cursor:              pointer;
+}
 
 div.newbooks {
   margin: 20px;
