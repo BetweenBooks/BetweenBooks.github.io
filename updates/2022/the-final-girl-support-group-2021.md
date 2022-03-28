@@ -4,7 +4,6 @@ title: "The Final Girl Support Group"
 simpleTitle: "The Final Girl Support Group"
 authors: 
  - Grady Hendrix 
- - Grady Hendrix
 yearPublished: 2021
 publisher: "Berkley Books"
 goodreadsLink: https://www.goodreads.com/book/show/55829194-the-final-girl-support-group
