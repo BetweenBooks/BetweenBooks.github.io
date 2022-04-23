@@ -30,8 +30,6 @@
   $endif$
 </head>
 <body>
-  <div id="book-animation" onclick="document.location = '/';"></div>
-
   <section role="banner" id="header">
     <nav role="navigation">
       <div class="container">
@@ -55,20 +53,5 @@
     <div class="decoration"><img alt="stack of books" src="/images/bb-book.png" /></div>
   </footer>
 
-  <script type="text/javascript">
-  window.onload = function () {
-    const p = document.getElementById("book-animation")
-    const h = 30;
-
-    function setFrame(frame) {
-      const f = frame % 158;
-      p.style["background-position"] = "0 " + "-" + (f*h) + "pt";
-    }
-
-    document.addEventListener('scroll', function(x) {
-      setFrame(Math.floor(window.scrollY/30))
-    }, false)
-  }
-  </script>
 </body>
 </html>
