@@ -13,6 +13,7 @@ pages: 448
 tags:
  - adventurous
  - travel
+ - music
 date: 2021-04-18
 summary:
   <p>An amazing read about a journey through various towns in Siberia where

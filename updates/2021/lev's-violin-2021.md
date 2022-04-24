@@ -16,6 +16,7 @@ tags:
  - travel
  - personal
  - quirky
+ - music
 date: 2021-09-05
 summary:
   <p>This book was enjoyable, easy, reading. I got fully immersed in the
