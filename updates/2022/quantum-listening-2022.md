@@ -15,7 +15,7 @@ pages: 64
 tags:
  - quirky
  - non-fiction
-date: 2022-07-25
+date: 2022-07-24
 issueCreatedAt: 2022-07-17T20:10:36Z
 imageUrl: /images/book-images/quantum-listening-2022.webp
 summary: |
