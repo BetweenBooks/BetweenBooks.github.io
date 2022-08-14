@@ -131,6 +131,7 @@ tags = do
   mkTag ".books" lavender
   mkTag ".music" hotpink
   mkTag ".language" saddlebrown
+  mkTag ".politics" lightsalmon
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
