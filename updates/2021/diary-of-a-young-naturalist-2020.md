@@ -16,6 +16,7 @@ tags:
  - personal
  - short-read
  - philosophical
+ - climate
 date: 2021-08-29
 summary:
   <p>I really loved this book. I think it's interesting for a few reasons.
