@@ -103,35 +103,36 @@ tags = do
 
   let mkTag t c = a # t ? borderBottom solid (px 2) c
 
-  mkTag ".travel" limegreen
-  mkTag ".personal" pink
-  mkTag ".quirky" violet
-  mkTag ".informative" lightskyblue
-  mkTag ".adventurous" sandybrown
-  mkTag ".short-read" lightslategray
-  mkTag ".philosophical" gold
-  mkTag ".feminism" salmon
-  mkTag ".racism" chocolate
-  mkTag ".non-fiction" lightsteelblue
-  mkTag ".fun" orange
-  mkTag ".fiction" rosybrown
-  mkTag ".history" peru
-  mkTag ".traumatic" mediumblue
-  mkTag ".urban-planning" lightseagreen
-  mkTag ".economics" khaki
-  mkTag ".buddhism" blueviolet
-  mkTag ".long-read" plum
-  mkTag ".democracy" thistle
-  mkTag ".ethics" wheat
-  mkTag ".compassion" skyblue
-  mkTag ".empathy" slateblue
   mkTag ".activism" aquamarine
-  mkTag ".poetry" orchid
-  mkTag ".climate" honeydew
+  mkTag ".adventurous" sandybrown
+  mkTag ".architecture" yellowgreen
   mkTag ".books" lavender
-  mkTag ".music" hotpink
+  mkTag ".buddhism" blueviolet
+  mkTag ".climate" honeydew
+  mkTag ".compassion" skyblue
+  mkTag ".democracy" thistle
+  mkTag ".economics" khaki
+  mkTag ".empathy" slateblue
+  mkTag ".ethics" wheat
+  mkTag ".feminism" salmon
+  mkTag ".fiction" rosybrown
+  mkTag ".fun" orange
+  mkTag ".history" peru
+  mkTag ".informative" lightskyblue
   mkTag ".language" saddlebrown
+  mkTag ".long-read" plum
+  mkTag ".music" hotpink
+  mkTag ".non-fiction" lightsteelblue
+  mkTag ".personal" pink
+  mkTag ".philosophical" gold
+  mkTag ".poetry" orchid
   mkTag ".politics" lightsalmon
+  mkTag ".quirky" violet
+  mkTag ".racism" chocolate
+  mkTag ".short-read" lightslategray
+  mkTag ".traumatic" mediumblue
+  mkTag ".travel" limegreen
+  mkTag ".urban-planning" lightseagreen
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
