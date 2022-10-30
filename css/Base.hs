@@ -133,6 +133,7 @@ tags = do
   mkTag ".traumatic" mediumblue
   mkTag ".travel" limegreen
   mkTag ".urban-planning" lightseagreen
+  mkTag ".philanthropy" lightblue
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
