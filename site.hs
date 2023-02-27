@@ -4,29 +4,27 @@
 {-# language TupleSections     #-}
 {-# language TypeApplications  #-}
 
-import           Data.Time.Clock             (UTCTime (..))
-import           Data.Time.Format            (parseTimeM)
-import           Data.List                   (sortBy)
-import           Data.Ord                    (comparing)
-import           Data.Time.Locale.Compat     (TimeLocale, defaultTimeLocale)
-import           Control.Monad (liftM)
+import           Control.Monad                   (liftM)
 import           Data.Aeson
 import           Data.List
-import           Data.List.Split (splitOn)
-import           Data.String.Utils (strip)
-import           Data.Maybe (fromJust, isJust, fromMaybe, maybe)
-import           Data.String.Conv (toS)
+import           Data.List.Split                 (splitOn)
+import           Data.Maybe                      (fromJust, isJust, fromMaybe)
+import           Data.Ord                        (comparing)
+import           Data.String.Conv                (toS)
+import           Data.String.Utils               (strip)
+import           Data.Time.Clock                 (UTCTime (..))
+import           Data.Time.Format                (parseTimeM)
+import           Data.Time.Locale.Compat         (TimeLocale, defaultTimeLocale)
 import           GHC.Generics
 import           Hakyll
-import           Hakyll.Core.UnixFilter (unixFilter)
-import           System.Environment (lookupEnv)
+import           System.Environment              (lookupEnv)
 import           System.FilePath
-import           Text.HTML.TagSoup (Tag (..))
-import qualified Text.Blaze.Html5                as H
-import qualified Text.Blaze.Html5.Attributes     as A
 import           Text.Blaze.Html                 (toHtml, toValue, (!))
 import           Text.Blaze.Html.Renderer.String (renderHtml)
-import qualified Data.Map as M
+import           Text.HTML.TagSoup (             Tag (..))
+import qualified Data.Map                        as M
+import qualified Text.Blaze.Html5                as H
+import qualified Text.Blaze.Html5.Attributes     as A
 
 
 config :: Configuration
@@ -77,10 +75,11 @@ main = do
 
     match "css/*.hs" $ do
       -- See: https://jaspervdj.be/hakyll/tutorials/using-clay-with-hakyll.html
-      route   $ setExtension "css"
+      route $ setExtension "css"
 
-      let cssStr = getResourceString >>= withItemBody (unixFilter "stack" ["runghc"])
-      compile $ fmap compressCss <$>  cssStr
+      let cssStr = getResourceString >>= withItemBody (unixFilter "runghc" [])
+
+      compile $ fmap compressCss <$> cssStr
 
 
     let draftCheck = if showDrafts then
@@ -251,7 +250,7 @@ affiliateCode = "7342"
 
 
 affiliateLink :: String -> String
-affiliateLink s = 
+affiliateLink s =
   let items = splitOn "/" s
    in "https://uk.bookshop.org/a/" ++ affiliateCode ++ "/" ++ last items
 

@@ -101,7 +101,7 @@ tags = do
     textDecoration none
     allPadding (px 2)
 
-  let mkTag t c = a # t ? borderBottom solid (px 2) c
+  let mkTag t c = a # t ? borderBottom (px 2) solid c
 
   mkTag ".activism" aquamarine
   mkTag ".adventurous" sandybrown
@@ -160,7 +160,7 @@ bookList = do
     flexGrow 1
     flexBasis (pct 42)
     allPadding (pct 2)
-    borderBottom solid (px 3) black
+    borderBottom (px 3) solid black
 
   section # ".books" ? do
     display flex
@@ -184,7 +184,7 @@ bookList = do
   -- Generate the cool shelves.
   forM_ [ Text.pack . show $ (2*w + 1) | w <- [0..200]] $ \n -> do
     div # ".book" # nthChild n ? do
-      borderRight solid (px 3) black
+      borderRight (px 3) solid black
 
   query Clay.all [Media.maxWidth 1200] $ do
     -- body ?
@@ -196,7 +196,7 @@ bookList = do
     -- Other side of the shelf
     forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
       div # ".book" # nthChild n ? do
-        borderLeft solid (px 3) black
+        borderLeft (px 3) solid black
     --
     div # ".book" ? do
       flexBasis (pct 90)
@@ -334,7 +334,7 @@ reviewPage = do
     backgroundColor white
     minWidth        (px 200)
     maxWidth        (px 300)
-    borderBottom    solid (px 3) black
+    borderBottom    (px 3) solid black
     img ? do
       maxHeight (pct 100)
       maxWidth  (pct 100)
@@ -357,7 +357,7 @@ reviewPage = do
 
     blockquote ? do
       paddingLeft (px 10)
-      borderLeft  solid (px 1) silver
+      borderLeft  (px 1) solid silver
       fontStyle   italic
 
   div # ".book-info" ? do
