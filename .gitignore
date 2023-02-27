@@ -3,3 +3,5 @@ _cache/
 _site/
 metadata/
 *.bak
+.direnv/
+dist-newstyle/

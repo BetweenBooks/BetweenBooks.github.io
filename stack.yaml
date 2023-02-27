@@ -1,5 +1,9 @@
-resolver: lts-12.26
+resolver: lts-20.11
 packages:
   - .
-extra-deps: 
-- hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939
+nix:
+  shell-file: "./nix/stack-shell.nix"
+extra-deps:
+  - github: sebastiaanvisser/clay
+    commit: f162121b4dcccdab01dbedf4b4144f2d8d13a2a6
+  - hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939

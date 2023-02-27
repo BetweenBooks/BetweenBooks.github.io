@@ -5,15 +5,26 @@
 
 packages:
 - completed:
+    name: clay
+    pantry-tree:
+      sha256: 429336c1b31927297aeb02272eb7b7dbbb4896940f9231cfdaae33c32599fded
+      size: 4153
+    sha256: 3f9d8b97a593c2a0966b4dea3c2322c78f4d4fab6517d6fde8a52923faf0c411
+    size: 51023
+    url: https://github.com/sebastiaanvisser/clay/archive/f162121b4dcccdab01dbedf4b4144f2d8d13a2a6.tar.gz
+    version: 0.14.0
+  original:
+    url: https://github.com/sebastiaanvisser/clay/archive/f162121b4dcccdab01dbedf4b4144f2d8d13a2a6.tar.gz
+- completed:
     hackage: hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939
     pantry-tree:
-      size: 217
       sha256: c03e74e71d010f009b8d972efc31fbd6dd25183e6d9afbec55f4b7f0d4a74b47
+      size: 217
   original:
     hackage: hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939
 snapshots:
 - completed:
-    size: 509471
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/12/26.yaml
-    sha256: 95f014df58d0679b1c4a2b7bf2b652b61da8d30de5f571abb0d59015ef678646
-  original: lts-12.26
+    sha256: adbc602422dde10cc330175da7de8609e70afc41449a7e2d6e8b1827aa0e5008
+    size: 649342
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/20/11.yaml
+  original: lts-20.11

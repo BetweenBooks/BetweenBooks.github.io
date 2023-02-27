@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 set -e
 
@@ -10,4 +10,4 @@ fi
 
 # Make some more. Can't do in parallel.
 find images  -type f -print0 | xargs -P 1 -0 -I {} \
-   ./make-compressed-image "{}"
+   ./scripts/make-compressed-image "{}"
