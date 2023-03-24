@@ -41,7 +41,7 @@ final: prev: {
       final.stack
       # Random things that could/should be cleaned up.
       final.rsync
-      final.imagemagick_light
+      final.imagemagick
     ];
   };
 }
