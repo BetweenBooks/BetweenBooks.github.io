@@ -12,8 +12,8 @@ git stash
 # - Generate metadata
 
 mkdir -p metadata
-./make-image-metadata
-./git-metadata
+./scripts/make-image-metadata
+./scripts/git-metadata
 
 
 # - Build the site
