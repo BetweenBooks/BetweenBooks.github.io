@@ -114,6 +114,7 @@ main = do
       compile $ getResourceBody
                   >>= renderPandoc
                   >>= loadAndApplyTemplate "templates/review.html"  ctx
+                  >>= saveSnapshot "content"
                   >>= loadAndApplyTemplate "templates/default.html" ctx
                   >>= applyAsTemplate ctx
                   >>= lqipImages imageMetaData
@@ -173,6 +174,23 @@ main = do
           >>= loadAndApplyTemplate "templates/default.html" ctx
           >>= lqipImages imageMetaData
           >>= relativizeUrls
+
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = bbContext `mappend` bodyField "description"
+            posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "updates/**.md" "content"
+            renderAtom feedConf feedCtx posts
+
+
+feedConf :: FeedConfiguration
+feedConf = FeedConfiguration
+    { feedTitle         = "Between Books"
+    , feedDescription   = "The Interdependent Bookshop!"
+    , feedAuthorName    = "Noon van der Silk"
+    , feedAuthorEmail   = "noonsilk+-noonsilk@gmail.com"
+    , feedRoot          = "https://betweenbooks.com.au/"
+    }
 
 
 byIssueCreationTime :: (MonadMetadata m) => [Item a] -> m [Item a]
