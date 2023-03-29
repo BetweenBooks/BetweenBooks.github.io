@@ -113,10 +113,9 @@ main = do
 
       compile $ getResourceBody
                   >>= renderPandoc
-                  >>= loadAndApplyTemplate "templates/review.html"  ctx
                   >>= saveSnapshot "content"
+                  >>= loadAndApplyTemplate "templates/review.html"  ctx
                   >>= loadAndApplyTemplate "templates/default.html" ctx
-                  >>= applyAsTemplate ctx
                   >>= lqipImages imageMetaData
                   >>= relativizeUrls
 
@@ -178,7 +177,12 @@ main = do
     create ["atom.xml"] $ do
         route idRoute
         compile $ do
-            let feedCtx = bbContext `mappend` bodyField "description"
+            let feedCtx = bookContext `mappend` (field "description" f)
+                f i = do
+                  let identifier = itemIdentifier i
+                  metadata <- getMetadata identifier
+                  pure $ maybe (error "No summary") id $ lookupString "summary" metadata
+
             posts <- fmap (take 10) . recentFirst =<< loadAllSnapshots "updates/**.md" "content"
             renderAtom feedConf feedCtx posts
 
@@ -189,7 +193,7 @@ feedConf = FeedConfiguration
     , feedDescription   = "The Interdependent Bookshop!"
     , feedAuthorName    = "Noon van der Silk"
     , feedAuthorEmail   = "noonsilk+-noonsilk@gmail.com"
-    , feedRoot          = "https://betweenbooks.com.au/"
+    , feedRoot          = "https://betweenbooks.com.au"
     }
 
 
@@ -269,8 +273,11 @@ affiliateCode = "7342"
 
 affiliateLink :: String -> String
 affiliateLink s =
-  let items = splitOn "/" s
-   in "https://uk.bookshop.org/a/" ++ affiliateCode ++ "/" ++ last items
+  let j = splitOn "?ean=" s
+   in case j of
+        [_, ean] -> "https://uk.bookshop.org/a/" ++ affiliateCode ++ "/" ++ ean
+        _ -> let items = splitOn "/" s
+              in "https://uk.bookshop.org/a/" ++ affiliateCode ++ "/" ++ last items
 
 
 bbContext :: Context String
