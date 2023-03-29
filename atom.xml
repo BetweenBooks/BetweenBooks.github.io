@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Between Books</title>
-    <link href="https://betweenbooks.com.au//atom.xml" rel="self" />
-    <link href="https://betweenbooks.com.au/" />
-    <id>https://betweenbooks.com.au//atom.xml</id>
+    <link href="https://betweenbooks.com.au/atom.xml" rel="self" />
+    <link href="https://betweenbooks.com.au" />
+    <id>https://betweenbooks.com.au/atom.xml</id>
     <author>
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
@@ -11,743 +11,87 @@
     <updated>2023-03-24T00:00:00Z</updated>
     <entry>
     <title>Strong Female Character</title>
-    <link href="https://betweenbooks.com.au//updates/2023/strong-female-character-2023.html" />
-    <id>https://betweenbooks.com.au//updates/2023/strong-female-character-2023.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/strong-female-character-2023.html" />
+    <id>https://betweenbooks.com.au/updates/2023/strong-female-character-2023.html</id>
     <published>2023-03-24T00:00:00Z</published>
     <updated>2023-03-24T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/strong-female-character-2023.webp" alt="Strong Female Character - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Fern Brady
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Brazen, 2023</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">288</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/6460207">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/non-fiction.html" class="tag non-fiction">non-fiction</a>,
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Strong Female Character</h1>
-
-    <div class="summary">
-      <p><p>Really quite interesting and good. I think I'd seen Fern Brady
+    <summary type="html"><![CDATA[<p>Really quite interesting and good. I think I'd seen Fern Brady
 before, and she's clearly and interesting person, but this an
 enlightening book for me, in particular in building some empathy for how
 people with autism experience life and their emotions, and in particular
-women. Great reading!</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+women. Great reading!</p>]]></summary>
 </entry>
 <entry>
     <title>The Complete Persepolis</title>
-    <link href="https://betweenbooks.com.au//updates/2023/persepolis-2003.html" />
-    <id>https://betweenbooks.com.au//updates/2023/persepolis-2003.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/persepolis-2003.html" />
+    <id>https://betweenbooks.com.au/updates/2023/persepolis-2003.html</id>
     <published>2023-02-19T00:00:00Z</published>
     <updated>2023-02-19T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/persepolis-2003.webp" alt="Persepolis - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Anjali Singh,
-          
-            Blake Ferris,
-          
-            Marjane Satrapi,
-          
-            Mattias Ripa
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Pantheon Books, 2003</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">341</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/1744949">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/informative.html" class="tag informative">informative</a>,
-          
-            <a href="/tags/non-fiction.html" class="tag non-fiction">non-fiction</a>,
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>The Complete Persepolis</h1>
-
-    <div class="summary">
-      <p><p>I've got mixed feelings about this book. Mostly, it was good; it was informative and I learned a lot. The graphic novel form is also just a nice way to convey a complicated topic with lots of personal feeling and information. On the other hand, I can't say I found the author totally likeable; but perhaps that just means she presented her story truly; after all, we all make mistakes and say things we regret. In any case, I'm glad I read this, and if you're at all curious about a personal perspective on Iran, I at least found it interesting and worthwhile.</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>I've got mixed feelings about this book. Mostly, it was good; it was informative and I learned a lot. The graphic novel form is also just a nice way to convey a complicated topic with lots of personal feeling and information. On the other hand, I can't say I found the author totally likeable; but perhaps that just means she presented her story truly; after all, we all make mistakes and say things we regret. In any case, I'm glad I read this, and if you're at all curious about a personal perspective on Iran, I at least found it interesting and worthwhile.</p>]]></summary>
 </entry>
 <entry>
     <title>Small Things Like These</title>
-    <link href="https://betweenbooks.com.au//updates/2023/small-things-like-these-2021.html" />
-    <id>https://betweenbooks.com.au//updates/2023/small-things-like-these-2021.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/small-things-like-these-2021.html" />
+    <id>https://betweenbooks.com.au/updates/2023/small-things-like-these-2021.html</id>
     <published>2023-02-05T00:00:00Z</published>
     <updated>2023-02-05T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/small-things-like-these-2021.webp" alt="Small Things Like These - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Claire Keegan
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Grove Press, 2021</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">118</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/6161216">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/fiction.html" class="tag fiction">fiction</a>,
-          
-            <a href="/tags/informative.html" class="tag informative">informative</a>,
-          
-            <a href="/tags/short-read.html" class="tag short-read">short-read</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Small Things Like These</h1>
-
-    <div class="summary">
-      <p><p>Loved this one. It's indeed beautifully written; extremely readable and interesting. It has a softness, and I really enjoyed my time with this one :) Also nice to learn some Irish words and culture!</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>Loved this one. It's indeed beautifully written; extremely readable and interesting. It has a softness, and I really enjoyed my time with this one :) Also nice to learn some Irish words and culture!</p>]]></summary>
 </entry>
 <entry>
     <title>Everyone in This Room Will Someday Be Dead</title>
-    <link href="https://betweenbooks.com.au//updates/2023/everyone-in-this-room-will-someday-be-dead-2021.html" />
-    <id>https://betweenbooks.com.au//updates/2023/everyone-in-this-room-will-someday-be-dead-2021.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/everyone-in-this-room-will-someday-be-dead-2021.html" />
+    <id>https://betweenbooks.com.au/updates/2023/everyone-in-this-room-will-someday-be-dead-2021.html</id>
     <published>2023-01-29T00:00:00Z</published>
     <updated>2023-01-29T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/everyone-in-this-room-will-someday-be-dead-2021.webp" alt="Everyone In This Room Will Someday Be Dead - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Emily R. Austin
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Atria Books, 2021</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">256</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9781838953751">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/fiction.html" class="tag fiction">fiction</a>,
-          
-            <a href="/tags/fun.html" class="tag fun">fun</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Everyone in This Room Will Someday Be Dead</h1>
-
-    <div class="summary">
-      <p><p>Hilarious and brilliant. Very enjoyable reading; only note is that at the time I was reading this I was occasionally visiting a hospital, and I had to hide the cover :)</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>Hilarious and brilliant. Very enjoyable reading; only note is that at the time I was reading this I was occasionally visiting a hospital, and I had to hide the cover :)</p>]]></summary>
 </entry>
 <entry>
     <title>How to Blow Up a Pipeline</title>
-    <link href="https://betweenbooks.com.au//updates/2023/how-to-blow-up-a-pipeline-2021.html" />
-    <id>https://betweenbooks.com.au//updates/2023/how-to-blow-up-a-pipeline-2021.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/how-to-blow-up-a-pipeline-2021.html" />
+    <id>https://betweenbooks.com.au/updates/2023/how-to-blow-up-a-pipeline-2021.html</id>
     <published>2023-01-15T00:00:00Z</published>
     <updated>2023-01-15T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/how-to-blow-up-a-pipeline-2021.webp" alt="How To Blow Up A Pipeline - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Andreas Malm
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Verso Books, 2021</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">208</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9781839760259">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/climate.html" class="tag climate">climate</a>,
-          
-            <a href="/tags/philosophical.html" class="tag philosophical">philosophical</a>,
-          
-            <a href="/tags/politics.html" class="tag politics">politics</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>How to Blow Up a Pipeline</h1>
-
-    <div class="summary">
-      <p><p>I quite liked this. It's a nice discussion of climate activism and the general connection between activism and resistance. It leaves a lot of food for thought about what is necessary in order to make people change their behaviours. A great, short, thoughtful, and inspiring read.</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>I quite liked this. It's a nice discussion of climate activism and the general connection between activism and resistance. It leaves a lot of food for thought about what is necessary in order to make people change their behaviours. A great, short, thoughtful, and inspiring read.</p>]]></summary>
 </entry>
 <entry>
     <title>Once Upon a Tome: The Misadventures of a Rare Bookseller</title>
-    <link href="https://betweenbooks.com.au//updates/2023/once-upon-a-tome-2022.html" />
-    <id>https://betweenbooks.com.au//updates/2023/once-upon-a-tome-2022.html</id>
+    <link href="https://betweenbooks.com.au/updates/2023/once-upon-a-tome-2022.html" />
+    <id>https://betweenbooks.com.au/updates/2023/once-upon-a-tome-2022.html</id>
     <published>2023-01-08T00:00:00Z</published>
     <updated>2023-01-08T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/once-upon-a-tome-2022.webp" alt="Once Upon A Tome - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Oliver Darkshire,
-          
-            Oliver Darkshire
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Bantam Press, 2022</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">244</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9781787636040">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/books.html" class="tag books">books</a>,
-          
-            <a href="/tags/fun.html" class="tag fun">fun</a>,
-          
-            <a href="/tags/non-fiction.html" class="tag non-fiction">non-fiction</a>,
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Once Upon a Tome: The Misadventures of a Rare Bookseller</h1>
-
-    <div class="summary">
-      <p><p>Just simply an extremely enjoyable and engaging read about life in a bookshop :) I loved it; I've been reading a few of these "real-life bookshop" stories, to get a sense of what it might be like to work in one, and I think this story is particularly interesting because of the history associated with this particular bookshop, and of course the author is just a great story teller. Highly recommended if you want to get a sense of the magic that it could be, to work in a rare bookshop!</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>Just simply an extremely enjoyable and engaging read about life in a bookshop :) I loved it; I've been reading a few of these "real-life bookshop" stories, to get a sense of what it might be like to work in one, and I think this story is particularly interesting because of the history associated with this particular bookshop, and of course the author is just a great story teller. Highly recommended if you want to get a sense of the magic that it could be, to work in a rare bookshop!</p>]]></summary>
 </entry>
 <entry>
     <title>Ice Rivers</title>
-    <link href="https://betweenbooks.com.au//updates/2022/ice-rivers-2021.html" />
-    <id>https://betweenbooks.com.au//updates/2022/ice-rivers-2021.html</id>
+    <link href="https://betweenbooks.com.au/updates/2022/ice-rivers-2021.html" />
+    <id>https://betweenbooks.com.au/updates/2022/ice-rivers-2021.html</id>
     <published>2022-12-18T00:00:00Z</published>
     <updated>2022-12-18T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/ice-rivers-2021.webp" alt="Ice Rivers - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Jemma Wadham
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Allen Lane, 2021</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">240</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9780141994147">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/adventurous.html" class="tag adventurous">adventurous</a>,
-          
-            <a href="/tags/climate.html" class="tag climate">climate</a>,
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>,
-          
-            <a href="/tags/travel.html" class="tag travel">travel</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Ice Rivers</h1>
-
-    <div class="summary">
-      <p><p>This book will always have a special place in my heart now, given that it happened to be the book I was reading at the time our daughter arrived, and as a result I finished it by reading it to her in her first few days of being out and about :) That said, on it's own merit it is pretty good. I learned some interesting facts about glaciers; enjoyed learning about her life, and overall got inspired about this kind of career. Pretty good!</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>This book will always have a special place in my heart now, given that it happened to be the book I was reading at the time our daughter arrived, and as a result I finished it by reading it to her in her first few days of being out and about :) That said, on it's own merit it is pretty good. I learned some interesting facts about glaciers; enjoyed learning about her life, and overall got inspired about this kind of career. Pretty good!</p>]]></summary>
 </entry>
 <entry>
     <title>Peaces</title>
-    <link href="https://betweenbooks.com.au//updates/2022/peaces-2021.html" />
-    <id>https://betweenbooks.com.au//updates/2022/peaces-2021.html</id>
+    <link href="https://betweenbooks.com.au/updates/2022/peaces-2021.html" />
+    <id>https://betweenbooks.com.au/updates/2022/peaces-2021.html</id>
     <published>2022-11-20T00:00:00Z</published>
     <updated>2022-11-20T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/peaces-2021.webp" alt="Peaces - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Helen Oyeyemi
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Riverhead Books, 2021</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">272</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9780571366590">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/fiction.html" class="tag fiction">fiction</a>,
-          
-            <a href="/tags/quirky.html" class="tag quirky">quirky</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Peaces</h1>
-
-    <div class="summary">
-      <p><p>A fairly strange but reasonably interesting story. I think in the end I liked it; perhaps I was hoping for a bit more of a feeling of "mysterious train journey", but what I got was more "confusing train journey"; but, I did find the ending worth-while; so I don't regret my time reading it. Worth picking up :)</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>A fairly strange but reasonably interesting story. I think in the end I liked it; perhaps I was hoping for a bit more of a feeling of "mysterious train journey", but what I got was more "confusing train journey"; but, I did find the ending worth-while; so I don't regret my time reading it. Worth picking up :)</p>]]></summary>
 </entry>
 <entry>
     <title>Giving Back: How to Do Good, Better</title>
-    <link href="https://betweenbooks.com.au//updates/2022/giving-back-2022.html" />
-    <id>https://betweenbooks.com.au//updates/2022/giving-back-2022.html</id>
+    <link href="https://betweenbooks.com.au/updates/2022/giving-back-2022.html" />
+    <id>https://betweenbooks.com.au/updates/2022/giving-back-2022.html</id>
     <published>2022-10-30T00:00:00Z</published>
     <updated>2022-10-30T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/giving-back-2022.webp" alt="Giving Back - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Derek A. Bardowell
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Dialogue Books, 2022</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">448</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9780349701974">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/climate.html" class="tag climate">climate</a>,
-          
-            <a href="/tags/feminism.html" class="tag feminism">feminism</a>,
-          
-            <a href="/tags/informative.html" class="tag informative">informative</a>,
-          
-            <a href="/tags/non-fiction.html" class="tag non-fiction">non-fiction</a>,
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>,
-          
-            <a href="/tags/philanthropy.html" class="tag philanthropy">philanthropy</a>,
-          
-            <a href="/tags/politics.html" class="tag politics">politics</a>,
-          
-            <a href="/tags/racism.html" class="tag racism">racism</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Giving Back: How to Do Good, Better</h1>
-
-    <div class="summary">
-      <p><p>This book wasn't what I expected, but it was still quite interesting. It's seems to be me to be roughly a biography of this persons life in the social sector, but is also an exploration of a whole bunch of "alternative" programs that focus the particular communities, marginalised groups, and aim to find solutions from <em>within</em> those groups, rather than "fixing" them from the outside, with metrics and impact reports, etc. I think it's a great source of inspiration on that front, and has some relevance <a href="https://fixplanet.club/">for a project I'm part of</a> in the climate space. Definitely worth a glance!</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>This book wasn't what I expected, but it was still quite interesting. It's seems to be me to be roughly a biography of this persons life in the social sector, but is also an exploration of a whole bunch of "alternative" programs that focus the particular communities, marginalised groups, and aim to find solutions from <em>within</em> those groups, rather than "fixing" them from the outside, with metrics and impact reports, etc. I think it's a great source of inspiration on that front, and has some relevance <a href="https://fixplanet.club/">for a project I'm part of</a> in the climate space. Definitely worth a glance!</p>]]></summary>
 </entry>
 <entry>
     <title>Still Born</title>
-    <link href="https://betweenbooks.com.au//updates/2022/still-born-2022.html" />
-    <id>https://betweenbooks.com.au//updates/2022/still-born-2022.html</id>
+    <link href="https://betweenbooks.com.au/updates/2022/still-born-2022.html" />
+    <id>https://betweenbooks.com.au/updates/2022/still-born-2022.html</id>
     <published>2022-10-16T00:00:00Z</published>
     <updated>2022-10-16T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div id="book-review">
-  <div class "book-info-wrapper">
-    <div class="book-info">
-      <div>
-        <img src="/images/book-images/still-born-2022.webp" alt="Still Born - Cover" />
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <span class="property">Author</span>
-          <div class="book-authors">
-            Guadalupe Nettel,
-          
-            Rosalind Harvey
-          </div>
-        </div>
-
-        <div class="fact">
-          <span class="property">Published by</span>
-          <span class="value">Fitzcarraldo Editions, 2022</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Pages</span>
-          <span class="value">200</span>
-        </div>
-
-        <div class="fact">
-          <span class="property">Find on</span>
-          
-          <span class="fact"><a href="https://uk.bookshop.org/a/7342/9781913097660">Bookshop</a></span>
-          
-        </div>
-
-        <div class="fact">
-          <span class="property">Tags</span>
-
-          <br />
-          <span class="tags">
-          
-            <a href="/tags/personal.html" class="tag personal">personal</a>,
-          
-            <a href="/tags/philosophical.html" class="tag philosophical">philosophical</a>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="large-review">
-    <h1>Still Born</h1>
-
-    <div class="summary">
-      <p><p>Picked this up after listening to the author talk about it during the a book festival in Edinburgh. I loved it. I'm excited also to try and read the Spanish version in Spanish; but that will probably be a bit of a challenge. In any case, a nice read about parenting, how to relate to people, and what our relationships could be like. It also almost made me cry on the first page, which I thought was impressive.</p></p>
-    </div>
-
-    <div class="review">
-      
-    </div>
-
-  </div>
-
-</div>
-]]></summary>
+    <summary type="html"><![CDATA[<p>Picked this up after listening to the author talk about it during the a book festival in Edinburgh. I loved it. I'm excited also to try and read the Spanish version in Spanish; but that will probably be a bit of a challenge. In any case, a nice read about parenting, how to relate to people, and what our relationships could be like. It also almost made me cry on the first page, which I thought was impressive.</p>]]></summary>
 </entry>
 
 </feed>
