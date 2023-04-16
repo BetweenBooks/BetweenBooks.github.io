@@ -114,6 +114,7 @@ tags = do
   mkTag ".economics" khaki
   mkTag ".empathy" slateblue
   mkTag ".ethics" wheat
+  mkTag ".fantasy" thistle
   mkTag ".feminism" salmon
   mkTag ".fiction" rosybrown
   mkTag ".fun" orange
@@ -124,6 +125,7 @@ tags = do
   mkTag ".music" hotpink
   mkTag ".non-fiction" lightsteelblue
   mkTag ".personal" pink
+  mkTag ".philanthropy" lightblue
   mkTag ".philosophical" gold
   mkTag ".poetry" orchid
   mkTag ".politics" lightsalmon
@@ -133,7 +135,6 @@ tags = do
   mkTag ".traumatic" mediumblue
   mkTag ".travel" limegreen
   mkTag ".urban-planning" lightseagreen
-  mkTag ".philanthropy" lightblue
 
   div #".tagCloud" ? do
     fontSize (em 1.1)
