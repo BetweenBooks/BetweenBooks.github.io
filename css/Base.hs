@@ -124,6 +124,7 @@ tags = do
   mkTag ".long-read" plum
   mkTag ".music" hotpink
   mkTag ".non-fiction" lightsteelblue
+  mkTag ".parenting" sienna
   mkTag ".personal" pink
   mkTag ".philanthropy" lightblue
   mkTag ".philosophical" gold
