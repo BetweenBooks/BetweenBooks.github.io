@@ -133,6 +133,7 @@ tags = do
   mkTag ".quirky" violet
   mkTag ".racism" chocolate
   mkTag ".short-read" lightslategray
+  mkTag ".technology" coral
   mkTag ".traumatic" mediumblue
   mkTag ".travel" limegreen
   mkTag ".urban-planning" lightseagreen
