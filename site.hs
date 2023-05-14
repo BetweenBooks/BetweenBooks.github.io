@@ -244,7 +244,7 @@ makeLink minSize maxSize tag url count min' max' =
 bookContext :: Context String
 bookContext
   =  asList "authors"
-  <> asList "tags"
+  <> asSortedList "tags"
   <> bbContext
   <> mkAffiliate "affiliateLink"
     where
@@ -257,12 +257,14 @@ bookContext
             return link
           )
 
-      asList fieldName
+      asList       = asSortedList' id
+      asSortedList = asSortedList' sort
+      asSortedList' sortFunc fieldName
         = listFieldWith fieldName bbContext (\i -> do
             let identifier = itemIdentifier i
             metadata <- getMetadata identifier
             let metas = maybe [] id $ lookupStringList fieldName metadata
-            return $ map (\x -> Item (fromFilePath x) x) (sort metas)
+            return $ map (\x -> Item (fromFilePath x) x) (sortFunc metas)
           )
 
 
