@@ -119,6 +119,7 @@ tags = do
   mkTag ".fiction" rosybrown
   mkTag ".fun" orange
   mkTag ".history" peru
+  mkTag ".immigration" Clay.tan
   mkTag ".informative" lightskyblue
   mkTag ".language" saddlebrown
   mkTag ".long-read" plum
@@ -185,9 +186,9 @@ bookList = do
       width (px 200)
 
   -- Generate the cool shelves.
-  forM_ [ Text.pack . show $ (2*w + 1) | w <- [0..200]] $ \n -> do
-    div # ".book" # nthChild n ? do
-      borderRight (px 3) solid black
+  -- forM_ [ Text.pack . show $ (2*w + 1) | w <- [0..200]] $ \n -> do
+  div # ".book" # nthChild "odd" ? do
+    borderRight (px 3) solid black
 
   query Clay.all [Media.maxWidth 1200] $ do
     -- body ?
@@ -197,9 +198,9 @@ bookList = do
       marginRight (px 20)
 
     -- Other side of the shelf
-    forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
-      div # ".book" # nthChild n ? do
-        borderLeft (px 3) solid black
+    -- forM_ [ Text.pack . show $ (2*w) | w <- [0..200]] $ \n -> do
+    div # ".book" # nthChild "even" ? do
+      borderLeft (px 3) solid black
     --
     div # ".book" ? do
       flexBasis (pct 90)
