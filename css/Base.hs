@@ -258,7 +258,7 @@ links = do
 fonts :: Css
 fonts = do
   body ? do
-    fontSize (px 14)
+    fontSize (px 18)
 
   let fontSelectors = p <> li <> blockquote <> a <> small
 
