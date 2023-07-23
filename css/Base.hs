@@ -219,8 +219,14 @@ bookList = do
 
   -- Smallest
   query Clay.all [Media.maxWidth 800] $ do
+    div # "#content" ? do
+      allMargin (px 5)
+      allPadding (px 0)
+
     div # ".book" ? do
       flexDirection column
+      paddingTop    (px 20)
+      paddingBottom (px 20)
 
     ul # "#menu" ? do
       flexDirection column
