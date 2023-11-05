@@ -170,7 +170,7 @@ Good to refer back to when thinking about teaching classes.
   > 1. developing attention and stability of mind;
   > 2. observing the inner nature of thoughts, feelings and emotions;
   > 3. exploring self-compassion &mdash; recognizing our desire for happiness,
-  >    the mental states that lead to personal fulfillment, and willingness to
+  >    the mental states that lead to personal fulfilment, and willingness to
   >    free oneself from emotional states that detract from happiness;
   > 4. developing impartiality towards other beings, be they friends, enemies,
   >    or strangers, and at the same time questioning the value &mdash; fixed,

@@ -270,7 +270,7 @@ inheritance, on wealth.
 - Page 561 - Push for an _annual_ wealth tax.
 
 - Page 569 - Calculation demonstrating that certain property taxes that are
-flat end up being regressive insofaras they don't consider if people owe money
+flat end up being regressive insofar as they don't consider if people owe money
 on the property.
 
 <span class="ch">Communist and Postcommunist Societies</span>

@@ -18,7 +18,7 @@ summary: |
   <p>It took a few chapters to get into this book, but once I did, I think it
   paid off. Dan has a nice friendly writing style, and the stories he
   tells are interesting and charming. There are also references to a few
-  other books I am reading (<a href="https://mitpress.mit.edu/books/importance-being-iceland">The Importantance of Being Iceland</a>, and <a href="https://en.wikipedia.org/wiki/Nan_Shepherd">The Living Mountain</a>), so that helped me connect a bit more.
+  other books I am reading (<a href="https://mitpress.mit.edu/books/importance-being-iceland">The Importance of Being Iceland</a>, and <a href="https://en.wikipedia.org/wiki/Nan_Shepherd">The Living Mountain</a>), so that helped me connect a bit more.
   Overall I think it's a nice entry in this genre, but lacks some of the
   philosophical punch of Barry Lopez in <a href="https://www.penguin.co.uk/books/111/1117966/horizon/9781529111248.html">Horizon</a>, say. Still worth reading,
   though, and certainly fun.</p>
