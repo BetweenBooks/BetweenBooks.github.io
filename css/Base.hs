@@ -103,6 +103,7 @@ tags = do
 
   let mkTag t c = a # t ? borderBottom (px 2) solid c
 
+  mkTag ".art" darkmagenta
   mkTag ".activism" aquamarine
   mkTag ".adventurous" sandybrown
   mkTag ".architecture" yellowgreen
