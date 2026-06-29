@@ -39,7 +39,6 @@ rsync -a --filter='P _site/'      \
          --filter='P .env'        \
          --filter='P .nojekyll'   \
          --filter='P metadata'    \
-         --filter='P CNAME'       \
          --filter='P spellcheck'  \
          --delete-excluded        \
          _site/ .
