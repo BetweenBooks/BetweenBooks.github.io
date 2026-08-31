@@ -4,6 +4,7 @@ set -e
 
 export SHOW_DRAFTS=True
 
-# ./scripts/git-metadata
+./scripts/git-metadata
+./scripts/make-image-metadata
 
-stack run --nix -- clean && stack run --nix -- watch
+cabal run between-books -- watch

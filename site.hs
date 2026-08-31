@@ -143,6 +143,7 @@ main = do
 
     match (fromList
             [ "about.md"
+            , "grbc.md"
             ]) $ do
       route $ setExtension "html"
       compile $ do

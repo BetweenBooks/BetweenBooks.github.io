@@ -18,8 +18,8 @@ mkdir -p metadata
 
 # - Build the site
 
-stack run -- clean
-stack run -- build
+cabal run between-books -- clean
+cabal run between-books -- build
 
 
 # - Switch branches
@@ -31,16 +31,16 @@ git checkout gh-pages
 #   things that are peristed due to branch switches; those things in the
 #   gitignore file.)
 
-rsync -a --filter='P _site/'      \
-         --filter='P _cache/'     \
-         --filter='P .git/'       \
-         --filter='P .gitignore'  \
-         --filter='P .stack-work' \
-         --filter='P .env'        \
-         --filter='P .nojekyll'   \
-         --filter='P metadata'    \
-         --filter='P spellcheck'  \
-         --delete-excluded        \
+rsync -a --filter='P _site/'         \
+         --filter='P _cache/'        \
+         --filter='P .git/'          \
+         --filter='P .gitignore'     \
+         --filter='P .dist-newstyle' \
+         --filter='P .env'           \
+         --filter='P .nojekyll'      \
+         --filter='P metadata'       \
+         --filter='P spellcheck'     \
+         --delete-excluded           \
          _site/ .
 
 

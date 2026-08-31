@@ -1,32 +1,23 @@
 {
   inputs = {
-      nixpkgs.url       = "github:nixos/nixpkgs/nixos-22.11";
-      stacklock2nix.url = "github:cdepillabout/stacklock2nix/main";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    import-tree.url = "github:vic/import-tree";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 
   outputs = inputs:
-    with inputs; let
-      supportedSystems = [
-        "aarch64-darwin"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "x86_64-linux"
-      ];
-      forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
-      nixpkgsFor = forAllSystems (system:
-        import nixpkgs {
-          inherit system;
-          overlays = [stacklock2nix.overlay self.overlay];
-        });
-    in {
-      overlay = import nix/overlay.nix;
+    inputs.flake-parts.lib.mkFlake { inherit inputs; }
+      {
+        systems = [
+          "aarch64-darwin"
+          "aarch64-linux"
+          "x86_64-darwin"
+          "x86_64-linux"
+        ];
 
-      packages = forAllSystems (system: {
-        site = nixpkgsFor.${system}.site-app;
-      });
-
-      defaultPackage = forAllSystems (system: self.packages.${system}.site);
-
-      devShell = forAllSystems (system: nixpkgsFor.${system}.site-dev-shell);
-    };
+        imports = [
+          (inputs.import-tree ./nix)
+        ];
+      };
 }
