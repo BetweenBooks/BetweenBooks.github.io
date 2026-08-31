@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Between Books</title>
+    <subtitle><![CDATA[The Interdependent Bookshop!]]></subtitle>
     <link href="https://betweenbooks.com.au/atom.xml" rel="self" />
     <link href="https://betweenbooks.com.au" />
     <id>https://betweenbooks.com.au/atom.xml</id>
     <author>
         <name>Noon van der Silk</name>
+        
         <email>noonsilk+-noonsilk@gmail.com</email>
+        
     </author>
     <updated>2024-06-02T00:00:00Z</updated>
     <entry>
